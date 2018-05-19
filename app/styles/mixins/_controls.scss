@@ -1,0 +1,116 @@
+@mixin link-variant($color, $hover-color: false, $text-decoration: none) {
+  @include outline-none;
+  transition: color $transition-duration-short ease;
+  color: $color;
+  text-decoration: $text-decoration;
+
+  &:after {
+    transition: background-color $transition-duration-short ease;
+    background-color: $color;
+  }
+
+  @include hover-focus {
+    text-decoration: $text-decoration;
+    cursor: pointer;
+
+    @if $hover-color {
+      color: $hover-color;
+
+      &:after {
+        background-color: $hover-color;
+      }
+
+      svg {
+        fill: $hover-color;
+      }
+    }
+    @else {
+      color: darken($color, 10%);
+
+      &:after {
+        background-color: darken($color, 10%);
+      }
+
+      svg {
+        fill: darken($color, 10%);
+      }
+    }
+  }
+
+  svg {
+    fill: $color;
+    transition: fill $transition-duration-short ease;
+  }
+}
+
+@mixin arrow-link($color) {
+  @include relative;
+  @include link-variant($color, $color);
+  @include font(h6);
+  @include pl(5);
+
+  svg {
+    @include svg-icon($width: 12px);
+    @include absolute(top 50% left 0);
+    transform: translateY(-50%);
+    transition: transform $transition-duration-short ease;
+  }
+
+  @include media-breakpoint-up(md) {
+    &:hover {
+      svg {
+        transform: translateX(5px) translateY(-50%);
+      }
+    }
+  }
+}
+
+@mixin arrow-btn ($font-color, $background-color, $border-color, $background-hover, $color-hover: $color-white) {
+  @include relative;
+  @include font(h6, $font-color);
+  @include outline-none;
+
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  transition: color $transition-duration-short ease,
+  border-color $transition-duration-short ease,
+  background $transition-duration-short ease;
+  border: 2px solid $border-color;
+  background-color: $background-color;
+
+  @include media-breakpoint-up(md) {
+    @include p(3, 7);
+
+    &:hover {
+      color: $color-hover;
+      background-color: $background-hover;
+      border-color: $background-hover;
+
+      svg {
+        fill: $color-hover;
+      }
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    @include p(4, 7);
+
+    &:hover {
+      color: $font-color;
+
+      svg {
+        fill: $font-color;
+      }
+    }
+  }
+  @include media-breakpoint-down(xs) {
+    width: 100%;
+  }
+
+  svg {
+    @include svg-icon($font-color, 12px);
+    @include absolute(top 50% right 15px);
+    transform: translateY(-50%);
+    transition: fill $transition-duration-short ease;
+  }
+}

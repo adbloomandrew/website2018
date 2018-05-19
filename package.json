@@ -1,40 +1,46 @@
 {
-  "name": "Front",
-  "version": "1.0.0",
-  "description": "Front - Responsive Website Template",
-  "main": "gulpfile.js",
-  "directories": {
-    "doc": "doc"
+  "private": true,
+  "engines": {
+    "node": ">=0.12.0"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://ruslan-garaev@bitbucket.org/htmlstream/front-v1.0.git"
-  },
-  "author": "htmlstream",
-  "license": "ISC",
-  "homepage": "https://bitbucket.org/htmlstream/front-v1.0#readme",
   "devDependencies": {
-    "del": "^3.0.0",
+    "@kirpich634/node-sass-tilde-importer": "^1.0.8",
+    "babel-core": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "browser-sync": "^2.23.6",
+    "del": "^1.1.1",
     "gulp": "^3.9.1",
-    "browser-sync": "^2.18.13",
     "gulp-autoprefixer": "^5.0.0",
-    "gulp-changed": "^3.1.0",
+    "gulp-babel": "^7.0.0",
     "gulp-cache": "^1.0.2",
-    "gulp-concat": "^2.6.1",
-    "gulp-cssnano": "^2.1.3",
+    "gulp-clean-css": "^3.9.3",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-eslint": "^4.0.2",
+    "gulp-file-include": "^2.0.1",
     "gulp-htmlmin": "^4.0.0",
+    "gulp-if": "^2.0.2",
     "gulp-imagemin": "^4.1.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^4.0.1",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-md5-assets": "^1.0.1",
+    "gulp-minifier": "^1.2.2",
+    "gulp-minify": "2.1.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-size": "^3.0.0",
     "gulp-sourcemaps": "^2.6.4",
-    "gulp-uglifyjs": "^0.6.2",
-    "imagemin-jpeg-recompress": "^5.1.0",
-    "imagemin-pngquant": "^5.1.0"
+    "gulp-uglify-es": "^1.0.1",
+    "gulp-useref": "^3.1.5",
+    "i": "^0.3.6",
+    "install": "^0.10.4",
+    "main-bower-files": "^2.13.1",
+    "npm": "^5.7.1",
+    "serve": "^6.5.3",
+    "wiredep": "^4.0.0"
   },
   "dependencies": {
+    "@7ninjas/scss-mixins": "^1.0.0",
+    "bootstrap": "v4.0.0",
+    "jquery": "3.0.0",
     "animate.css": "^3.6.1",
     "chartist": "^0.11.0",
     "custombox": "^4.0.3",
@@ -47,5 +53,24 @@
     "malihu-custom-scrollbar-plugin": "^3.1.5",
     "popper.js": "^1.14.3",
     "typed.js": "^2.0.6"
+  },
+  "eslintConfig": {
+    "env": {
+      "es6": true,
+      "node": true,
+      "browser": true
+    },
+    "rules": {
+      "quotes": [
+        2,
+        "single"
+      ]
+    }
+  },
+  "scripts": {
+    "build": "gulp",
+    "start": "gulp serve",
+    "dist": "gulp && serve ./dist --open",
+    "clean": "gulp clean"
   }
 }

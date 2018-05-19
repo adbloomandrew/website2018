@@ -1,0 +1,26 @@
+// type: primary || secondary
+// theme: dark || light
+
+.control-primary-dark {
+  @include arrow-btn($color-black, transparent, $color-brown-dark, $color-brown-dark);
+}
+
+.control-primary-light {
+  @include arrow-btn($color-white, transparent, $color-white, $color-green-light);
+}
+
+.control-primary-white {
+  @include arrow-btn($color-white, transparent, $color-white, $color-white, $color-black);
+}
+
+.control-secondary-dark {
+  @include arrow-link($color-black);
+}
+
+.control-secondary-light {
+  @include arrow-link($color-white);
+}
+
+.control-secondary-green {
+  @include arrow-link($color-green-light);
+}
