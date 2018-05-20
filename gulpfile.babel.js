@@ -40,7 +40,7 @@ var paths = {
     output: 'dist/'
   },
   data: {
-    input: 'app/data/**/*.{json,mp4,webm}',
+    input: 'app/data/**/',
     tmp: '.tmp/data/',
     output: 'dist/data/'
   }
