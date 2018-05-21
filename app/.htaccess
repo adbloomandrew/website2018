@@ -1,5 +1,0 @@
-AuthName "Sign in"
-AuthType Basic
-AuthUserFile ./data/.htpasswd
-AuthUserFile /home/dh_rm5vtw/new.adbloom.com/data/.htpasswd
-require valid-user
