@@ -1,3 +1,13 @@
 //
 // File for your custom SCSS style
 //
+
+.u-header {
+  .u-header__dashboard-link {
+    padding-top: 20px;
+    text-decoration: underline;
+  }
+  .u-toolbox__dashboard-link {
+    padding: 0 14px;
+  }
+}
