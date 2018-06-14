@@ -1,0 +1,19 @@
+// Login button styles
+.u-header__login {
+  border: 1px solid $primary;
+  min-width: 95px;
+  padding: 10px 12px;
+}
+
+.u-header {
+  &.transparent {
+    &:not(.u-scrolled) {
+      &:not(:hover) {
+        .u-header__section {
+          background-color: transparent;
+          box-shadow: none;
+        }
+      }
+    }
+  }
+}

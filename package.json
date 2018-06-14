@@ -50,7 +50,9 @@
     "jquery-migrate": "^3.0.1",
     "jquery-validation": "^1.17.0",
     "malihu-custom-scrollbar-plugin": "^3.1.5",
+    "parsleyjs": "^2.8.1",
     "popper.js": "^1.14.3",
+    "rellax": "^1.6.2",
     "typed.js": "^2.0.6"
   },
   "eslintConfig": {

@@ -1,0 +1,48 @@
+.u-modal-window {
+  @include absolute;
+}
+
+
+// lock page when modal is open
+body.custombox-lock {
+  overflow: hidden;
+}
+
+// fix modal close button styles (hover state)
+#learnModeModal {
+  transition: height 0.3s ease;
+  max-height: 150vh;
+
+  &.u-modal-window {
+    max-height: none;
+  }
+  .u-btn-text-white {
+    color: $black;
+  }
+
+  .message-block {
+    &__success {
+      display: none;
+    }
+    &__error {
+      display: none;
+    }
+    &__visible {
+      display: block;
+    }
+  }
+}
+
+// parsley error messages
+.input-group {
+  @include relative;
+
+  .parsley-errors-list {
+    position: absolute;
+    top: 110%;
+    left: 0;
+  }
+  .parsley-custom-error-message {
+    color: $danger;
+  }
+}

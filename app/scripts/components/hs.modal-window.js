@@ -24,7 +24,7 @@
 			speed: 400,
 			type: 'onscroll', // onscroll, beforeunload, hashlink, ontarget, aftersometime
 			effect: 'fadein',
-			onOpen: function() {},
+      onOpen: function() {},
 			onClose: function() {},
 			onComplete: function() {}
 		},
@@ -314,13 +314,13 @@
 								}
 							}
 						).open();
-				    
+
 		  		}
 
 		  	}, 10);
 
 			});
-			
+
 
 		},
 

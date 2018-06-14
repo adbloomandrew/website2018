@@ -68,6 +68,7 @@ $g-light-blue-300:          																#8c98a4 !default;
 $g-blue:                                                    #377dff !default;
 $g-blue-darker:                                             #196eff !default;
 $g-blue-lighter:   																					#19a0ff !default;
+$g-blue-darkest: #1a1129;
 
 $g-teal:                                                    #00c9a7 !default;
 $g-teal-darker:                                             #10c7a8 !default;
@@ -130,7 +131,7 @@ $g-social-network-colors: map-merge((
 // Theme Colors
 $g-theme-colors: () !default;
 $g-theme-colors: map-merge((
-  "primary":    																	          $g-primary,
+  "primary":    																	          $g-blue-darkest,
   "secondary":  																	          $g-secondary,
   "success":  																		          $g-success,
   "info":  																				          $g-info,
@@ -422,7 +423,7 @@ $g-header-banner-v1-bg-overlay:                             $g-dark !default;
 $g-header-banner-v2-bg:                                     $g-light-blue-100 !default;
 
 // Other Colors
-$g-header-sub-menu-border-color:                  				  theme-color("primary") !default;
+$g-header-sub-menu-border-color:                  				  $g-gray-600;
 
 // Z-indexes
 $g-header-z-index:             													    101 !default;

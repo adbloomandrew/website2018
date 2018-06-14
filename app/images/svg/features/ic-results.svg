@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="378" height="325"
+     viewBox="0 0 378 325">
+  <defs>
+    <path id="m762a" d="M951.29 3109v-40h6.43v40z"/>
+    <path id="m762b" d="M934.5 3085.79h40v6.42h-40z"/>
+    <path id="m762c" d="M1187.71 3209v-25h3.57v25z"/>
+    <path id="m762d" d="M1176.29 3195.43h25v3.57h-25z"/>
+    <path id="m762e" d="M1287 3121.5a12.5 12.5 0 1 1 25 0 12.5 12.5 0 0 1-25 0z"/>
+    <path id="m762f" d="M967 2929a10 10 0 1 1 20 0 10 10 0 0 1-20 0z"/>
+    <path id="m762g" d="M1252 2894a10 10 0 1 1 20 0 10 10 0 0 1-20 0z"/>
+    <path id="m762h" d="M1206.27 3088.79h-140v-115h7.5l7.5-10h40l7.5 10h77.5z"/>
+    <path id="m762i" d="M1076.28 3078.79h120v-95h-120z"/>
+    <path id="m762j" d="M1188.77 2993.79h-105"/>
+    <path id="m762k" d="M1083.77 2973.79h35"/>
+    <path id="m762l" d="M1163.78 3066.29h12.5v-57.5h-12.5z"/>
+    <path id="m762m" d="M1141.28 3066.29h12.5v-45h-12.5z"/>
+    <path id="m762n" d="M1118.78 3066.29h12.5v-30h-12.5z"/>
+    <path id="m762o" d="M1096.28 3066.29h12.5v-20h-12.5z"/>
+    <path id="m762p" d="M1188.77 3066.29h-105"/>
+  </defs>
+  <g>
+    <g transform="translate(-934 -2884)">
+      <g>
+        <g>
+          <use fill="#9013fe" xlink:href="#m762a"/>
+        </g>
+        <g>
+          <use fill="#9013fe" xlink:href="#m762b"/>
+        </g>
+      </g>
+      <g>
+        <g>
+          <use fill="#9013fe" xlink:href="#m762c"/>
+        </g>
+        <g>
+          <use fill="#9013fe" xlink:href="#m762d"/>
+        </g>
+      </g>
+      <g>
+        <use fill="#9013fe" xlink:href="#m762e"/>
+      </g>
+      <g>
+        <use fill="#fff" fill-opacity="0" stroke="#9013fe" stroke-miterlimit="50" stroke-width="10"
+             xlink:href="#m762f"/>
+      </g>
+      <g>
+        <use fill="#9013fe" xlink:href="#m762g"/>
+      </g>
+      <g>
+        <g>
+          <use fill="#e9eaeb" xlink:href="#m762h"/>
+        </g>
+        <g>
+          <use fill="#fff" fill-opacity="0" stroke="#9013fe" stroke-miterlimit="50" stroke-width="5"
+               xlink:href="#m762h"/>
+        </g>
+        <g>
+          <use fill="#fff" xlink:href="#m762i"/>
+        </g>
+        <g>
+          <use fill="#fff" fill-opacity="0" stroke="#9013fe" stroke-miterlimit="50" stroke-width="5"
+               xlink:href="#m762i"/>
+        </g>
+        <g>
+          <use fill="#fff" fill-opacity="0" stroke="#9013fe" stroke-miterlimit="50" stroke-width="5"
+               xlink:href="#m762j"/>
+        </g>
+        <g>
+          <use fill="#fff" fill-opacity="0" stroke="#9013fe" stroke-miterlimit="50" stroke-width="5"
+               xlink:href="#m762k"/>
+        </g>
+        <g>
+          <use fill="#dbb4fe" xlink:href="#m762l"/>
+        </g>
+        <g>
+          <use fill="#fff" fill-opacity="0" stroke="#9013fe" stroke-miterlimit="50" stroke-width="5"
+               xlink:href="#m762l"/>
+        </g>
+        <g>
+          <use fill="#dbb4fe" xlink:href="#m762m"/>
+        </g>
+        <g>
+          <use fill="#fff" fill-opacity="0" stroke="#9013fe" stroke-miterlimit="50" stroke-width="5"
+               xlink:href="#m762m"/>
+        </g>
+        <g>
+          <use fill="#dbb4fe" xlink:href="#m762n"/>
+        </g>
+        <g>
+          <use fill="#fff" fill-opacity="0" stroke="#9013fe" stroke-miterlimit="50" stroke-width="5"
+               xlink:href="#m762n"/>
+        </g>
+        <g>
+          <use fill="#dbb4fe" xlink:href="#m762o"/>
+        </g>
+        <g>
+          <use fill="#fff" fill-opacity="0" stroke="#9013fe" stroke-miterlimit="50" stroke-width="5"
+               xlink:href="#m762o"/>
+        </g>
+        <g>
+          <use fill="#fff" fill-opacity="0" stroke="#9013fe" stroke-miterlimit="50" stroke-width="5"
+               xlink:href="#m762p"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

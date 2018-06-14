@@ -102,7 +102,11 @@
 		@include px-to-rem(padding-top, $g-space-2);
 	}
 
-	.u-space-5-top--md {
+  .u-space-4-top--md {
+    @include px-to-rem(padding-top, $g-space-4);
+  }
+
+  .u-space-5-top--md {
 		@include px-to-rem(padding-top, $g-space-5);
 	}
 }
@@ -113,6 +117,10 @@
 		@include px-to-rem(padding-top, $g-space-3);
 		@include px-to-rem(padding-bottom, $g-space-3);
 	}
+
+  .u-space-2-top--lg {
+    @include px-to-rem(padding-top, $g-space-2);
+  }
 
 	.u-space-3-top--lg {
 		@include px-to-rem(padding-top, $g-space-3);
@@ -125,6 +133,14 @@
 	.u-space-5-top--lg {
 		@include px-to-rem(padding-top, $g-space-5);
 	}
+
+  .u-space-3-bottom--lg {
+    @include px-to-rem(padding-bottom, $g-space-3);
+  }
+
+  .u-space-4-bottom--lg {
+    @include px-to-rem(padding-bottom, $g-space-4);
+  }
 
 	.u-space-5-bottom--lg {
 		@include px-to-rem(padding-bottom, $g-space-5);

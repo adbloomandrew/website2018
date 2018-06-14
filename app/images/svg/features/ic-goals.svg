@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="378" height="325"
+     viewBox="0 0 378 325">
+  <defs>
+    <path id="vz7ra" d="M951.29 2264v-40h6.43v40z"/>
+    <path id="vz7rb" d="M934.5 2240.79h40v6.42h-40z"/>
+    <path id="vz7rc" d="M1187.71 2364v-25h3.57v25z"/>
+    <path id="vz7rd" d="M1176.29 2350.43h25v3.57h-25z"/>
+    <path id="vz7re" d="M1287 2276.5a12.5 12.5 0 1 1 25 0 12.5 12.5 0 0 1-25 0z"/>
+    <path id="vz7rf" d="M967 2084a10 10 0 1 1 20 0 10 10 0 0 1-20 0z"/>
+    <path id="vz7rg" d="M1252 2049a10 10 0 1 1 20 0 10 10 0 0 1-20 0z"/>
+    <path id="vz7rh"
+          d="M1148.86 2116.28a72.13 72.13 0 0 0-72.1 72.16 72.13 72.13 0 0 0 72.1 72.15c39.83 0 72.1-32.3 72.1-72.15a72.13 72.13 0 0 0-72.1-72.16m0 125.49a53.31 53.31 0 0 1-53.29-53.33 53.31 53.31 0 0 1 53.3-53.34 53.31 53.31 0 0 1 53.29 53.34 53.31 53.31 0 0 1-53.3 53.33"/>
+    <path id="vz7ri" d="M1079.9 2188.7c0-12.69 3.43-24.59 9.4-34.81"/>
+    <path id="vz7rj" d="M1214.27 2210.67a69 69 0 0 1-65.4 47.06"/>
+    <path id="vz7rk" d="M1193.72 2159.17a54 54 0 0 1 7.55 18.93"/>
+    <path id="vz7rl"
+          d="M1201.26 2198.78a54.25 54.25 0 0 1-53.24 43.88 54.24 54.24 0 0 1-54.22-54.26 54.24 54.24 0 0 1 86.17-43.86"/>
+    <path id="vz7rm" d="M1108.26 2114.58a83.35 83.35 0 0 1 39.72-10 83.3 83.3 0 0 1 41.8 11.17"/>
+    <path id="vz7rn" d="M1111.23 2263.73a83.83 83.83 0 0 1-47.01-75.34 83.51 83.51 0 0 1 10.4-40.47"/>
+    <path id="vz7ro" d="M1227.81 2213.81a84.05 84.05 0 0 1-41.32 49.04"/>
+    <path id="vz7rp" d="M1222.98 2151.06a83.33 83.33 0 0 1 5.93 15.7"/>
+    <path id="vz7rq" d="M1179.3 2171.24a35.42 35.42 0 0 1 3.73 10.32"/>
+    <path id="vz7rr" d="M1182.15 2198.77a35.68 35.68 0 0 1-69.8-10.38 35.68 35.68 0 0 1 53.86-30.7"/>
+    <path id="vz7rs" d="M1164.5 2195.33a17.88 17.88 0 1 1-8.62-23.01"/>
+    <path id="vz7rt" d="M1148.87 2188.44h109.72"/>
+    <path id="vz7ru" d="M1249.18 2175.89h-18.66l-9.55 9.36v6.28l9.55 9.46h18.66v-3.19l-6.27-9.4 6.27-9.42z"/>
+    <path id="vz7rv" d="M1148.55 2189.2l76.33-75.45"/>
+    <path id="vz7rw"
+          d="M1209.28 2111.53l-13.39 13.31v13.31l2.3 1.62 2.31 1.61h13.3l13.3-12.7-2.22-1.92-11.08-2.07-2.26-11.02z"/>
+  </defs>
+  <g>
+    <g transform="translate(-934 -2039)">
+      <g>
+        <g>
+          <use fill="#9013fe" xlink:href="#vz7ra"/>
+        </g>
+        <g>
+          <use fill="#9013fe" xlink:href="#vz7rb"/>
+        </g>
+      </g>
+      <g>
+        <g>
+          <use fill="#9013fe" xlink:href="#vz7rc"/>
+        </g>
+        <g>
+          <use fill="#9013fe" xlink:href="#vz7rd"/>
+        </g>
+      </g>
+      <g>
+        <use fill="#9013fe" xlink:href="#vz7re"/>
+      </g>
+      <g>
+        <use fill="#fff" fill-opacity="0" stroke="#9013fe" stroke-miterlimit="50" stroke-width="10"
+             xlink:href="#vz7rf"/>
+      </g>
+      <g>
+        <use fill="#9013fe" xlink:href="#vz7rg"/>
+      </g>
+      <g>
+        <g>
+          <use fill="#e9d1ff" xlink:href="#vz7rh"/>
+        </g>
+        <g>
+          <use fill="#fff" fill-opacity="0" stroke="#9013fe" stroke-miterlimit="50" stroke-width="6.67"
+               xlink:href="#vz7ri"/>
+        </g>
+        <g>
+          <use fill="#fff" fill-opacity="0" stroke="#9013fe" stroke-miterlimit="50" stroke-width="6.67"
+               xlink:href="#vz7rj"/>
+        </g>
+        <g>
+          <use fill="#fff" fill-opacity="0" stroke="#c27dff" stroke-miterlimit="50" stroke-width="6.67"
+               xlink:href="#vz7rk"/>
+        </g>
+        <g>
+          <use fill="#fff" fill-opacity="0" stroke="#c27dff" stroke-miterlimit="50" stroke-width="6.67"
+               xlink:href="#vz7rl"/>
+        </g>
+        <g>
+          <use fill="#fff" fill-opacity="0" stroke="#9013fe" stroke-miterlimit="50" stroke-width="6.67"
+               xlink:href="#vz7rm"/>
+        </g>
+        <g>
+          <use fill="#fff" fill-opacity="0" stroke="#9013fe" stroke-miterlimit="50" stroke-width="6.67"
+               xlink:href="#vz7rn"/>
+        </g>
+        <g>
+          <use fill="#fff" fill-opacity="0" stroke="#9013fe" stroke-miterlimit="50" stroke-width="6.67"
+               xlink:href="#vz7ro"/>
+        </g>
+        <g>
+          <use fill="#fff" fill-opacity="0" stroke="#9013fe" stroke-miterlimit="50" stroke-width="6.67"
+               xlink:href="#vz7rp"/>
+        </g>
+        <g>
+          <use fill="#fff" fill-opacity="0" stroke="#c27dff" stroke-miterlimit="50" stroke-width="6.67"
+               xlink:href="#vz7rq"/>
+        </g>
+        <g>
+          <use fill="#fff" fill-opacity="0" stroke="#c27dff" stroke-miterlimit="50" stroke-width="6.67"
+               xlink:href="#vz7rr"/>
+        </g>
+        <g>
+          <use fill="#fff" fill-opacity="0" stroke="#c27dff" stroke-miterlimit="50" stroke-width="6.67"
+               xlink:href="#vz7rs"/>
+        </g>
+        <g>
+          <use fill="#fff" fill-opacity="0" stroke="#59447f" stroke-miterlimit="50" stroke-width="6.67"
+               xlink:href="#vz7rt"/>
+        </g>
+        <g>
+          <use fill="#c27dff" xlink:href="#vz7ru"/>
+        </g>
+        <g>
+          <use fill="#fff" fill-opacity="0" stroke="#9013fe" stroke-miterlimit="50" stroke-width="6.67"
+               xlink:href="#vz7ru"/>
+        </g>
+        <g>
+          <use fill="#fff" fill-opacity="0" stroke="#59447f" stroke-miterlimit="50" stroke-width="6.67"
+               xlink:href="#vz7rv"/>
+        </g>
+        <g>
+          <use fill="#c27dff" xlink:href="#vz7rw"/>
+        </g>
+        <g>
+          <use fill="#fff" fill-opacity="0" stroke="#9013fe" stroke-miterlimit="50" stroke-width="6.67"
+               xlink:href="#vz7rw"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

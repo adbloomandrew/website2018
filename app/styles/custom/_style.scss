@@ -2,12 +2,73 @@
 // File for your custom SCSS style
 //
 
-.u-header {
-  .u-header__dashboard-link {
-    padding-top: 20px;
-    text-decoration: underline;
+@import "components/learn-more-modal";
+@import "components/header";
+@import "components/service-container";
+@import "components/features-card";
+@import "components/about-hero-section";
+@import "components/about-team-section";
+
+.u-gradient-half-primary-v4 {
+  background-image: linear-gradient(270deg, #3c285f 0%, #2b1c44 100%);
+}
+
+.u-icon-primary--air {
+  background-color: transparentize($primary, 0.9);
+  color: $primary;
+}
+
+.u-slick__arrow,
+.u-btn-primary--air {
+  background-color: transparentize($primary, 0.9);
+  color: $primary;
+
+  @include hover {
+    background-color: $primary;
+    color: $white;
   }
-  .u-toolbox__dashboard-link {
-    padding: 0;
+}
+
+.u-btn-width-115 {
+  min-width: 115px;
+}
+
+.u-slick__pagination {
+  li {
+    span {
+      background-color: $primary;
+    }
+
+    &.slick-active {
+      span {
+        border-color: $primary;
+      }
+    }
   }
+}
+
+.u-go-to{
+  background-color: transparentize($white, 0.8);
+  color: $white;
+
+  @include hover {
+    background-color: $primary;
+  }
+}
+
+.first-line-indent {
+  text-indent: 2rem;
+}
+
+.u-divider-line {
+  border: none;
+  border-bottom: 2px solid $g-gray-75;
+}
+
+.height-100 {
+  height: 100%;
+}
+
+.min-height-3-lines {
+  min-height: 2.5rem;
 }

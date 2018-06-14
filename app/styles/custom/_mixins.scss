@@ -1,3 +1,16 @@
 //
 // File for your custom Mixins
 //
+
+// 7ninjas scss mixins
+@import '~@7ninjas/scss-mixins/src/animations';
+@import '~@7ninjas/scss-mixins/src/breakpoints';
+@import '~@7ninjas/scss-mixins/src/fonts';
+@import '~@7ninjas/scss-mixins/src/flex';
+@import '~@7ninjas/scss-mixins/src/forms';
+@import '~@7ninjas/scss-mixins/src/grid';
+@import '~@7ninjas/scss-mixins/src/icons';
+@import '~@7ninjas/scss-mixins/src/positioning';
+@import '~@7ninjas/scss-mixins/src/spacing';
+@import '~@7ninjas/scss-mixins/src/typography';
+@import '~@7ninjas/scss-mixins/src/utils';

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <!-- Title -->
-  <title>About | AdBloom</title>
+  <title>About | adbloom</title>
 
   <!-- Required Meta Tags Always Come First -->
   <meta charset="utf-8">
@@ -18,674 +18,324 @@
 </head>
 
 <body>
-  <!-- Skippy -->
-  <a id="skippy" class="sr-only sr-only-focusable u-skippy" href="#content">
+<!-- Skippy -->
+<a id="skippy" class="sr-only sr-only-focusable u-skippy" href="#content">
+  <div class="container">
+    <span class="u-skiplink-text">Skip to main content</span>
+  </div>
+</a>
+<!-- End Skippy -->
+
+<!-- ========== HEADER ========== -->
+@@include('app/partials/header.html', { "type": "white" })
+<!-- ========== END HEADER ========== -->
+
+<!-- ========== MAIN ========== -->
+<main id="content" role="main">
+  <!-- Hero Section -->
+  <section class="about-hero-section u-space-4 text-center min-height-100vh--lg">
     <div class="container">
-      <span class="u-skiplink-text">Skip to main content</span>
-    </div>
-  </a>
-  <!-- End Skippy -->
-
-  <!-- ========== HEADER ========== -->
-  @@include('app/partials/header.html')
-  <!-- ========== END HEADER ========== -->
-
-  <!-- ========== MAIN ========== -->
-  <main id="content" role="main">
-    <!-- Hero Section -->
-    <div class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll"
-         data-options='{direction: "normal"}'>
-      <!-- Apply your Parallax background image here -->
-      <div class="divimage dzsparallaxer--target" style="height: 120%; background-image: url(/images/img/1920x800/img13.jpg);"></div>
-
-      <!-- Content -->
-      <div class="container position-relative u-space-5-top u-space-3-bottom z-index-2">
-        <div class="w-lg-80 text-center mx-auto">
-          <h1 class="display-3 font-size-48--md-down text-white font-weight-bold">Got a question?</h1>
-          <p class="lead text-white">We'd love to talk about how we can help you.</p>
+      <div class="row justify-content-between align-items-center">
+        <div class="col-12 col-sm-8 col-lg-6 offset-sm-2 offset-lg-3">
+          <h1 class="h1 text-primary title">Meet adbloom</h1>
+          <h4 class="h4 subtitle">
+            An experienced team of <img src="/images/flags/4x3/ca.svg" alt="flag" class="d-inline-block flag"> ’s who
+            love what we do
+          </h4>
         </div>
       </div>
-      <!-- End Content -->
     </div>
-    <!-- End Hero Section -->
 
-    <!-- Contacts Info Section -->
-    <div class="clearfix u-space-2">
+    <!-- Go to Arrow -->
+    <a class="js-go-to u-go-to-modern scroll-down-link" href="javascript:;"
+       data-target="#team-section"
+       data-compensation="#header"
+       data-type="static">
+      <span class="fa fa-arrow-down u-go-to-modern__inner"></span>
+    </a>
+    <!-- End Go to Arrow -->
+
+  </section>
+  <!-- End Hero Section -->
+
+  <!-- Team Section -->
+  <section class="about-team-section" id="team-section">
+    <div class="container u-space-2">
       <div class="row">
-        <div class="col-sm-6 col-lg-3 u-ver-divider u-ver-divider--none-lg">
-          <!-- Contacts Info -->
-          <div class="text-center py-5">
-            <span class="u-icon u-icon-primary--air u-icon--lg rounded-circle mb-4">
-              <span class="fa fa-map-marker-alt u-icon__inner"></span>
-            </span>
-            <h2 class="h6 mb-0">Address</h2>
-            <p class="mb-0">153 Williamson Plaza, 09514</p>
-          </div>
-          <!-- End Contacts Info -->
-        </div>
-
-        <div class="col-sm-6 col-lg-3 u-ver-divider u-ver-divider--none-lg">
-          <!-- Contacts Info -->
-          <div class="text-center py-5">
-            <span class="u-icon u-icon-primary--air u-icon--lg rounded-circle mb-4">
-              <span class="fa fa-envelope u-icon__inner"></span>
-            </span>
-            <h3 class="h6 mb-0">Email</h3>
-            <p class="mb-0">support@htmlstream.com</p>
-          </div>
-          <!-- End Contacts Info -->
-        </div>
-
-        <div class="col-sm-6 col-lg-3 u-ver-divider u-ver-divider--none-lg">
-          <!-- Contacts Info -->
-          <div class="text-center py-5">
-            <span class="u-icon u-icon-primary--air u-icon--lg rounded-circle mb-4">
-              <span class="fa fa-phone u-icon__inner"></span>
-            </span>
-            <h3 class="h6 mb-0">Phone Number</h3>
-            <p class="mb-0">+1 (062) 109-9222</p>
-          </div>
-          <!-- End Contacts Info -->
-        </div>
-
-        <div class="col-sm-6 col-lg-3">
-          <!-- Contacts Info -->
-          <div class="text-center py-5">
-            <span class="u-icon u-icon-primary--air u-icon--lg rounded-circle mb-4">
-              <span class="fa fa-fax u-icon__inner"></span>
-            </span>
-            <h3 class="h6 mb-0">Fax</h3>
-            <p class="mb-0">+1 (062) 109-9223</p>
-          </div>
-          <!-- End Contacts Info -->
+        <div class="col-12">
+          <h2 class="text-primary font-weight-normal text-center mb-4">About adbloom</h2>
+          <p>
+            Adbloom is a performance-focused growth marketing agency focused on creating and developing true performance
+            campaigns. We leverage the power of organic, native content distributed thru blogs, media, influencers and
+            newsletters that complements and integrates with our client’s products, platforms and services.
+            We believe in the power of our content to drive actionable results for your brand. In fact, each and every
+            day we deliver thousands of new users, customers, gig-workers, teacher’s and other users to our clients, on
+            a true performance basis.
+          </p>
+          <p>
+            We help you leverage the immense power of authentic bloggers and influencers to build awareness, and more
+            importantly, drive measurable results against your user acquisition goals.
+          </p>
+          <p>
+            Founded in 2013 by Andrew Abony and Ryan Timm, we created adbloom to fill a need in the marketplace that we
+            saw, which was to provide the most amazing new startup companies with a solution to diversify their paid
+            marketing channels from the goliaths Facebook & Google, who we knew time and time again provided a fantastic
+            media platform with un-reliable and highly-risky pricing and platforms.
+          </p>
+          <p>
+            Today, we count 10 fantastic team members and continue to grow by providing our customers and partners with
+            fantastic service and measurable results.
+          </p>
         </div>
       </div>
     </div>
-    <!-- End Contacts Info Section -->
-
-    <hr class="my-0">
-
-    <!-- Contact Form Section -->
-    <div class="container u-space-3">
-      <!-- Title -->
-      <div class="w-md-80 w-lg-50 text-center mx-auto mb-9">
-        <span class="u-label u-label--sm u-label--success mb-2">Leave a Message</span>
-        <h2 class="text-primary font-weight-normal">Tell us about <span class="font-weight-bold">yourself</span></h2>
-        <p>Whether you have questions or you would just like to say hello, contact us.</p>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="text-primary font-weight-normal text-center mb-5">Adbloom Team</h2>
+        </div>
       </div>
-      <!-- End Title -->
-
-      <div class="w-lg-80 mx-auto">
-        <!-- Contacts Form -->
-        <form class="js-validate">
-          <div class="row">
-            <!-- Input -->
-            <div class="col-sm-6 mb-6">
-              <div class="js-form-message">
-                <label class="h6 small d-block text-uppercase">
-                  Your name
-                  <span class="text-danger">*</span>
-                </label>
-
-                <div class="js-focus-state input-group u-form">
-                  <input class="form-control u-form__input" type="text" name="name" required
-                         placeholder="Jack Wayley"
-                         aria-label="Jack Wayley"
-                         data-msg="Please enter your name."
-                         data-error-class="u-has-error"
-                         data-success-class="u-has-success">
-                </div>
+      <div class="row justify-content-around">
+        <div class="col-12 col-md-6 col-lg-5 mb-4 mb-md-0">
+          <div class="team-card-external">
+            <div class="team-card-internal text-center">
+              <img src="/images/Andrew.png" alt="Andrew Abony" class="img-fluid team-member-photo">
+              <div class="team-member-content">
+                <h4 class="h4 team-member-name mb-2">Andrew Abony</h4>
+                <p class="team-member-position mb-2">Chief Executive Officer & Co-Founder</p>
+                <p class="team-member-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam mauris pellentesque, luctus
+                  urna at, pharetra felis. Sed imperdiet sem vel finibus egestas. Nullam ut felis non mi consectetur
+                  cursus eget vel ante. In ac suscipit dolor, a suscipit ipsum. Nulla rhoncus, nunc ac scelerisque
+                  aliquam, tellus ipsum cursus justo, vitae euismod dui justo eget ligula. Nunc et mollis lectus. Duis
+                  elementum tortor ut magna vehicula aliquam. Vestibulum ante ipsum primis in faucibus orci luctus et
+                  ultrices posuere cubilia Curae; Praesent a tortor elementum, rutrum metus ut, euismod est. Proin
+                  tortor
+                  velit, pulvinar et fringilla et, rutrum non lectus. Donec eleifend fermentum neque, a cursus metus
+                  finibus et.
+                </p>
               </div>
             </div>
-            <!-- End Input -->
-
-            <!-- Input -->
-            <div class="col-sm-6 mb-6">
-              <div class="js-form-message">
-                <label class="h6 small d-block text-uppercase">
-                  Your email address
-                  <span class="text-danger">*</span>
-                </label>
-
-                <div class="js-focus-state input-group u-form">
-                  <input class="form-control u-form__input" type="email" name="email" required
-                         placeholder="jackwayley@gmail.com"
-                         aria-label="jackwayley@gmail.com"
-                         data-msg="Please enter a valid email address."
-                         data-error-class="u-has-error"
-                         data-success-class="u-has-success">
-                </div>
-              </div>
-            </div>
-            <!-- End Input -->
-
-            <div class="w-100"></div>
-
-            <!-- Input -->
-            <div class="col-sm-6 mb-6">
-              <div class="js-form-message">
-                <label class="h6 small d-block text-uppercase">
-                  Subject
-                  <span class="text-danger">*</span>
-                </label>
-
-                <div class="js-focus-state input-group u-form">
-                  <input class="form-control u-form__input" type="text" name="subject" required
-                         placeholder="Web design"
-                         aria-label="Web design"
-                         data-msg="Please enter a subject."
-                         data-error-class="u-has-error"
-                         data-success-class="u-has-success">
-                </div>
-              </div>
-            </div>
-            <!-- End Input -->
-
-            <!-- Input -->
-            <div class="col-sm-6 mb-6">
-              <div class="js-form-message">
-                <label class="h6 small d-block text-uppercase">
-                  Your Phone Number
-                  <span class="text-danger">*</span>
-                </label>
-
-                <div class="js-focus-state input-group u-form">
-                  <input class="form-control u-form__input" type="number" name="phone" required
-                         placeholder="1-800-643-4500"
-                         aria-label="1-800-643-4500"
-                         data-msg="Please enter a valid phone number."
-                         data-error-class="u-has-error"
-                         data-success-class="u-has-success">
-                </div>
-              </div>
-            </div>
-            <!-- End Input -->
           </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-5">
+          <div class="team-card-external">
+            <div class="team-card-internal text-center">
+              <img src="/images/Ryan.png" alt="Ryan Timm" class="img-fluid team-member-photo">
+              <div class="team-member-content">
+                <h4 class="h4 team-member-name mb-2">Ryan Timm</h4>
+                <p class="team-member-position mb-2">President & Co-founder</p>
+                <p class="team-member-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam mauris pellentesque, luctus
+                  urna at, pharetra felis. Sed imperdiet sem vel finibus egestas. Nullam ut felis non mi consectetur
+                  cursus eget vel ante. In ac suscipit dolor, a suscipit ipsum. Nulla rhoncus, nunc ac scelerisque
+                  aliquam, tellus ipsum cursus justo, vitae euismod dui justo eget ligula. Nunc et mollis lectus. Duis
+                  elementum tortor ut magna vehicula aliquam. Vestibulum ante ipsum primis in faucibus orci luctus et
+                  ultrices posuere cubilia Curae; Praesent a tortor elementum, rutrum metus ut, euismod est. Proin
+                  tortor
+                  velit, pulvinar et fringilla et, rutrum non lectus. Donec eleifend fermentum neque, a cursus metus
+                  finibus et.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Team Section -->
+
+  <!-- Contact Form Section -->
+  <div class="container u-space-3">
+    <!-- Title -->
+    <div class="w-md-80 w-lg-50 text-center mx-auto mb-9">
+      <span class="u-label u-label--sm u-label--success mb-2">Leave a Message</span>
+      <h2 class="text-primary font-weight-normal">Tell us about <span class="font-weight-bold">yourself</span></h2>
+      <p>Whether you have questions or you would just like to say hello, contact us.</p>
+    </div>
+    <!-- End Title -->
+
+    <div class="w-lg-80 mx-auto">
+      <!-- Contacts Form -->
+      <form class="js-validate">
+        <div class="row">
+          <!-- Input -->
+          <div class="col-sm-6 mb-6">
+            <div class="js-form-message">
+              <label class="h6 small d-block text-uppercase">
+                Your name
+                <span class="text-danger">*</span>
+              </label>
+
+              <div class="js-focus-state input-group u-form">
+                <input class="form-control u-form__input" type="text" name="name" required
+                       placeholder="Jack Wayley"
+                       aria-label="Jack Wayley"
+                       data-msg="Please enter your name."
+                       data-error-class="u-has-error"
+                       data-success-class="u-has-success">
+              </div>
+            </div>
+          </div>
+          <!-- End Input -->
 
           <!-- Input -->
-          <div class="js-form-message mb-9">
-            <label class="h6 small d-block text-uppercase">
-              How can we help you?
-              <span class="text-danger">*</span>
-            </label>
+          <div class="col-sm-6 mb-6">
+            <div class="js-form-message">
+              <label class="h6 small d-block text-uppercase">
+                Your email address
+                <span class="text-danger">*</span>
+              </label>
 
-            <div class="js-focus-state input-group u-form">
+              <div class="js-focus-state input-group u-form">
+                <input class="form-control u-form__input" type="email" name="email" required
+                       placeholder="jackwayley@gmail.com"
+                       aria-label="jackwayley@gmail.com"
+                       data-msg="Please enter a valid email address."
+                       data-error-class="u-has-error"
+                       data-success-class="u-has-success">
+              </div>
+            </div>
+          </div>
+          <!-- End Input -->
+
+          <div class="w-100"></div>
+
+          <!-- Input -->
+          <div class="col-sm-6 mb-6">
+            <div class="js-form-message">
+              <label class="h6 small d-block text-uppercase">
+                Subject
+                <span class="text-danger">*</span>
+              </label>
+
+              <div class="js-focus-state input-group u-form">
+                <input class="form-control u-form__input" type="text" name="subject" required
+                       placeholder="Web design"
+                       aria-label="Web design"
+                       data-msg="Please enter a subject."
+                       data-error-class="u-has-error"
+                       data-success-class="u-has-success">
+              </div>
+            </div>
+          </div>
+          <!-- End Input -->
+
+          <!-- Input -->
+          <div class="col-sm-6 mb-6">
+            <div class="js-form-message">
+              <label class="h6 small d-block text-uppercase">
+                Your Phone Number
+                <span class="text-danger">*</span>
+              </label>
+
+              <div class="js-focus-state input-group u-form">
+                <input class="form-control u-form__input" type="number" name="phone" required
+                       placeholder="1-800-643-4500"
+                       aria-label="1-800-643-4500"
+                       data-msg="Please enter a valid phone number."
+                       data-error-class="u-has-error"
+                       data-success-class="u-has-success">
+              </div>
+            </div>
+          </div>
+          <!-- End Input -->
+        </div>
+
+        <!-- Input -->
+        <div class="js-form-message mb-9">
+          <label class="h6 small d-block text-uppercase">
+            How can we help you?
+            <span class="text-danger">*</span>
+          </label>
+
+          <div class="js-focus-state input-group u-form">
               <textarea class="form-control u-form__input" rows="4" name="text" required
                         placeholder="Hi there, I would like to ..."
                         aria-label="Hi there, I would like to ..."
                         data-msg="Please enter a reason."
                         data-error-class="u-has-error"
                         data-success-class="u-has-success"></textarea>
-            </div>
           </div>
-          <!-- End Input -->
-
-          <div class="text-center">
-            <button type="submit" class="btn btn-primary u-btn-primary u-btn-wide transition-3d-hover mb-4">Submit</button>
-            <p class="small">We'll get back to you in 1-2 business days.</p>
-          </div>
-        </form>
-        <!-- End Contacts Form -->
-      </div>
-    </div>
-    <!-- End Contact Form Section -->
-
-    <!-- Google Map -->
-    <div class="container-fluid u-space-1-bottom">
-      <div id="gMapMultipleMarkers" class="embed-responsive embed-responsive-21by9 u-gmap-v1 min-height-450"
-           data-type="custom"
-           data-lat="37.4040344"
-           data-lng="-122.0289704"
-           data-zoom="13"
-           data-pin="true"
-           data-multiple-markers="true"
-           data-styles='[[
-            "", "", [
-              {"saturation": -100},
-              {"lightness": 50},
-              {"visibility": "simplified"}
-            ]],[
-              "",
-              "geometry", [
-                {"color": "#f3f3f3"}
-            ]],[
-              "road", "", [
-                {"color": "#ffffff"},
-                {"lightness": 100}
-            ]],[
-              "road",
-              "labels.text.fill", [
-                {"color": "#ffffff"},
-                {"lightness": -50}]
-            ],[
-              "water", "", [
-                {"color": "#377dff"}
-            ]]
-           ]'
-           data-markers-locations='[[
-              "/images/img/map-markers/map-marker1.png",
-              "Twisters Sports",
-              37.4037277, -122.0093084,
-              "/images/img/150x80/img1.jpg",
-              "Image description",
-              "17:48, April 27, 2017",
-              "United States",
-              "Twisters Sports"
-            ],[
-              "/images/img/map-markers/map-marker5.png",
-              "Equinix Data Center",
-              37.4011793, -122.013562,
-              "/images/img/150x80/img5.jpg",
-              "Image description",
-              "17:30, May 21, 2017",
-              "United States",
-              "Equinix Data Center"
-            ],[
-              "/images/img/map-markers/map-marker2.png",
-              "Amazon Lab126",
-              37.4093023, -122.0385558,
-              "/images/img/150x80/img2.jpg",
-              "Image description",
-              "11:48, June 3, 2017",
-              "United States",
-              "Amazon Lab126"
-            ],[
-              "/images/img/map-markers/map-marker3.png",
-              "Google Building TC4",
-              37.4061573, -122.0400798,
-              "/images/img/150x80/img3.jpg",
-              "Image description",
-              "9:48, January 1, 2017",
-              "United States",
-              "Google Building TC4"
-            ],[
-              "/images/img/map-markers/map-marker4.png",
-              "Sheraton Sunnyvale",
-              37.4040344, -122.0289704,
-              "/images/img/150x80/img4.jpg",
-              "Image description",
-              "9:48, January 1, 2017",
-              "United States",
-              "Sheraton Sunnyvale"
-            ]]'></div>
-    </div>
-    <!-- End Google Map -->
-  </main>
-  <!-- ========== END MAIN ========== -->
-
-  <!-- ========== FOOTER ========== -->
-  @@include('app/partials/footer.html')
-  <!-- ========== END FOOTER ========== -->
-
-  <!-- ========== SECONDARY CONTENTS ========== -->
-  <!-- Account Sidebar Navigation -->
-  <aside id="sidebarContent" class="u-sidebar u-unfold--css-animation u-unfold--hidden" aria-labelledby="sidebarNavToggler">
-    <div class="u-sidebar__scroller">
-      <div class="u-sidebar__container">
-        <div class="u-header-sidebar__footer-offset">
-          <!-- Toggle Button -->
-          <div class="d-flex align-items-center pt-4 px-7">
-            <button type="button" class="close ml-auto"
-                    aria-controls="sidebarContent"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                    data-unfold-event="click"
-                    data-unfold-hide-on-scroll="false"
-                    data-unfold-target="#sidebarContent"
-                    data-unfold-type="css-animation"
-                    data-unfold-animation-in="fadeInRight"
-                    data-unfold-animation-out="fadeOutRight"
-                    data-unfold-duration="500">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <!-- End Toggle Button -->
-
-          <!-- Content -->
-          <div class="js-scrollbar u-sidebar__body">
-            <div class="u-sidebar__content u-header-sidebar__content">
-              <form class="js-validate">
-                <!-- Login -->
-                <div id="login" data-target-group="idForm">
-                  <!-- Title -->
-                  <header class="text-center mb-7">
-                    <h2 class="h4 mb-0">Welcome Back!</h2>
-                    <p>Login to manage your account.</p>
-                  </header>
-                  <!-- End Title -->
-
-                  <!-- Input -->
-                  <div class="js-form-message mb-4">
-                    <div class="js-focus-state input-group u-form">
-                      <div class="input-group-prepend u-form__prepend">
-                        <span class="input-group-text u-form__text">
-                          <span class="fa fa-user u-form__text-inner"></span>
-                        </span>
-                      </div>
-                      <input type="email" class="form-control u-form__input" name="email" required
-                             placeholder="Email"
-                             aria-label="Email"
-                             data-msg="Please enter a valid email address."
-                             data-error-class="u-has-error"
-                             data-success-class="u-has-success">
-                    </div>
-                  </div>
-                  <!-- End Input -->
-
-                  <!-- Input -->
-                  <div class="js-form-message mb-2">
-                    <div class="js-focus-state input-group u-form">
-                      <div class="input-group-prepend u-form__prepend">
-                        <span class="input-group-text u-form__text">
-                          <span class="fa fa-lock u-form__text-inner"></span>
-                        </span>
-                      </div>
-                      <input type="password" class="form-control u-form__input" name="password" required
-                             placeholder="Password"
-                             aria-label="Password"
-                             data-msg="Your password is invalid. Please try again."
-                             data-error-class="u-has-error"
-                             data-success-class="u-has-success">
-                    </div>
-                  </div>
-                  <!-- End Input -->
-
-                  <div class="clearfix mb-4">
-                    <a class="js-animation-link float-right small u-link-muted" href="javascript:;"
-                       data-target="#forgotPassword"
-                       data-link-group="idForm"
-                       data-animation-in="slideInUp">Forgot Password?</a>
-                  </div>
-
-                  <div class="mb-2">
-                    <button type="submit" class="btn btn-block btn-primary u-btn-primary transition-3d-hover">Login</button>
-                  </div>
-
-                  <div class="text-center mb-4">
-                    <span class="small text-muted">Do not have an account?</span>
-                    <a class="js-animation-link small" href="javascript:;"
-                       data-target="#signup"
-                       data-link-group="idForm"
-                       data-animation-in="slideInUp">Signup
-                    </a>
-                  </div>
-
-                  <div class="text-center">
-                    <span class="u-divider u-divider--xs u-divider--text mb-4">OR</span>
-                  </div>
-
-                  <!-- Login Buttons -->
-                  <div class="d-flex">
-                    <a class="btn btn-block btn-sm u-btn-facebook--air transition-3d-hover mr-1" href="#">
-                      <span class="fab fa-facebook-square mr-1"></span>
-                      Facebook
-                    </a>
-                    <a class="btn btn-block btn-sm u-btn-google--air transition-3d-hover ml-1 mt-0" href="#">
-                      <span class="fab fa-google mr-1"></span>
-                      Google
-                    </a>
-                  </div>
-                  <!-- End Login Buttons -->
-                </div>
-
-                <!-- Signup -->
-                <div id="signup" style="display: none; opacity: 0;" data-target-group="idForm">
-                  <!-- Title -->
-                  <header class="text-center mb-7">
-                    <h2 class="h4 mb-0">Welcome to Front.</h2>
-                    <p>Fill out the form to get started.</p>
-                  </header>
-                  <!-- End Title -->
-
-                  <!-- Input -->
-                  <div class="js-form-message mb-4">
-                    <div class="js-focus-state input-group u-form">
-                      <div class="input-group-prepend u-form__prepend">
-                        <span class="input-group-text u-form__text">
-                          <span class="fa fa-user u-form__text-inner"></span>
-                        </span>
-                      </div>
-                      <input type="email" class="form-control u-form__input" name="email" required
-                             placeholder="Email"
-                             aria-label="Email"
-                             data-msg="Please enter a valid email address."
-                             data-error-class="u-has-error"
-                             data-success-class="u-has-success">
-                    </div>
-                  </div>
-                  <!-- End Input -->
-
-                  <!-- Input -->
-                  <div class="js-form-message mb-4">
-                    <div class="js-focus-state input-group u-form">
-                      <div class="input-group-prepend u-form__prepend">
-                        <span class="input-group-text u-form__text">
-                          <span class="fa fa-lock u-form__text-inner"></span>
-                        </span>
-                      </div>
-                      <input type="password" class="form-control u-form__input" name="password" required
-                             placeholder="Password"
-                             aria-label="Password"
-                             data-msg="Your password is invalid. Please try again."
-                             data-error-class="u-has-error"
-                             data-success-class="u-has-success">
-                    </div>
-                  </div>
-                  <!-- End Input -->
-
-                  <!-- Input -->
-                  <div class="js-form-message mb-4">
-                    <div class="js-focus-state input-group u-form">
-                      <div class="input-group-prepend u-form__prepend">
-                        <span class="input-group-text u-form__text">
-                          <span class="fa fa-key u-form__text-inner"></span>
-                        </span>
-                      </div>
-                      <input type="password" class="form-control u-form__input" name="confirmPassword" required
-                             placeholder="Confirm Password"
-                             aria-label="Confirm Password"
-                             data-msg="Password does not match the confirm password."
-                             data-error-class="u-has-error"
-                             data-success-class="u-has-success">
-                    </div>
-                  </div>
-                  <!-- End Input -->
-
-                  <div class="mb-2">
-                    <button type="submit" class="btn btn-block btn-primary u-btn-primary transition-3d-hover">Get Started</button>
-                  </div>
-
-                  <div class="text-center mb-4">
-                    <span class="small text-muted">Already have an account?</span>
-                    <a class="js-animation-link small" href="javascript:;"
-                       data-target="#login"
-                       data-link-group="idForm"
-                       data-animation-in="slideInUp">Login
-                    </a>
-                  </div>
-
-                  <div class="text-center">
-                    <span class="u-divider u-divider--xs u-divider--text mb-4">OR</span>
-                  </div>
-
-                  <!-- Login Buttons -->
-                  <div class="d-flex">
-                    <a class="btn btn-block btn-sm u-btn-facebook--air transition-3d-hover mr-1" href="#">
-                      <span class="fab fa-facebook-square mr-1"></span>
-                      Facebook
-                    </a>
-                    <a class="btn btn-block btn-sm u-btn-google--air transition-3d-hover ml-1 mt-0" href="#">
-                      <span class="fab fa-google mr-1"></span>
-                      Google
-                    </a>
-                  </div>
-                  <!-- End Login Buttons -->
-                </div>
-                <!-- End Signup -->
-
-                <!-- Forgot Password -->
-                <div id="forgotPassword" style="display: none; opacity: 0;" data-target-group="idForm">
-                  <!-- Title -->
-                  <header class="text-center mb-7">
-                    <h2 class="h4 mb-0">Recover Password.</h2>
-                    <p>Enter your email address and an email with instructions will be sent to you.</p>
-                  </header>
-                  <!-- End Title -->
-
-                  <!-- Input -->
-                  <div class="js-form-message mb-4">
-                    <div class="js-focus-state input-group u-form">
-                      <div class="input-group-prepend u-form__prepend">
-                        <span class="input-group-text u-form__text">
-                          <span class="fas fa-envelope u-inner-form__text"></span>
-                        </span>
-                      </div>
-                      <input type="email" class="form-control u-form__input" name="email" required
-                             placeholder="Your email"
-                             aria-label="Your email"
-                             data-msg="Please enter a valid email address."
-                             data-error-class="u-has-error"
-                             data-success-class="u-has-success">
-                    </div>
-                  </div>
-                  <!-- End Input -->
-
-                  <div class="mb-2">
-                    <button type="submit" class="btn btn-block btn-primary u-btn-primary transition-3d-hover">Recover Password</button>
-                  </div>
-
-                  <div class="text-center mb-4">
-                    <span class="small text-muted">Remember your password?</span>
-                    <a class="js-animation-link small" href="javascript:;"
-                       data-target="#login"
-                       data-link-group="idForm"
-                       data-animation-in="slideInUp">Login
-                    </a>
-                  </div>
-                </div>
-                <!-- End Forgot Password -->
-              </form>
-            </div>
-          </div>
-          <!-- End Content -->
         </div>
+        <!-- End Input -->
 
-        <!-- Footer -->
-        <footer class="u-sidebar__footer u-sidebar__footer--account">
-          <ul class="list-inline mb-0">
-            <li class="list-inline-item pr-3">
-              <a class="u-sidebar__footer--account__text" href="privacy.html">Privacy</a>
-            </li>
-            <li class="list-inline-item pr-3">
-              <a class="u-sidebar__footer--account__text" href="terms.html">Terms</a>
-            </li>
-            <li class="list-inline-item">
-              <a class="u-sidebar__footer--account__text" href="help.html">
-                <i class="fa fa-info-circle"></i>
-              </a>
-            </li>
-          </ul>
-
-          <!-- SVG Background Shape -->
-          <div class="position-absolute-bottom-0">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-               viewBox="0 0 300 126.5" style="margin-bottom: -5px; enable-background:new 0 0 300 126.5;" xml:space="preserve">
-              <path class="u-fill-primary" opacity=".6" d="M0,58.9c0-0.9,5.1-2,5.8-2.2c6-0.8,11.8,2.2,17.2,4.6c4.5,2.1,8.6,5.3,13.3,7.1C48.2,73.3,61,73.8,73,69
-                c43-16.9,40-7.9,84-2.2c44,5.7,83-31.5,143-10.1v69.8H0C0,126.5,0,59,0,58.9z"/>
-              <path class="u-fill-primary" d="M300,68.5v58H0v-58c0,0,43-16.7,82,5.6c12.4,7.1,26.5,9.6,40.2,5.9c7.5-2.1,14.5-6.1,20.9-11
-                c6.2-4.7,12-10.4,18.8-13.8c7.3-3.8,15.6-5.2,23.6-5.2c16.1,0.1,30.7,8.2,45,16.1c13.4,7.4,28.1,12.2,43.3,11.2
-                C282.5,76.7,292.7,74.4,300,68.5z"/>
-              <circle class="u-fill-danger" cx="259.5" cy="17" r="13"/>
-              <circle class="u-fill-primary" cx="290" cy="35.5" r="8.5"/>
-              <circle class="u-fill-success" cx="288" cy="5.5" r="5.5"/>
-              <circle class="u-fill-warning" cx="232.5" cy="34" r="2"/>
-            </svg>
-          </div>
-          <!-- End SVG Background Shape -->
-        </footer>
-        <!-- End Footer -->
-      </div>
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary u-btn-primary u-btn-wide transition-3d-hover mb-4">Submit
+          </button>
+        </div>
+      </form>
+      <!-- End Contacts Form -->
     </div>
-  </aside>
-  <!-- End Account Sidebar Navigation -->
-  <!-- ========== END SECONDARY CONTENTS ========== -->
+  </div>
+  <!-- End Contact Form Section -->
+</main>
+<!-- ========== END MAIN ========== -->
 
-  <!-- Go to Top -->
-  <a class="js-go-to u-go-to" href="#"
-    data-position='{"bottom": 15, "right": 15 }'
-    data-type="fixed"
-    data-offset-top="400"
-    data-compensation="#header"
-    data-show-effect="slideInUp"
-    data-hide-effect="slideOutDown">
-    <span class="fa fa-arrow-up u-go-to__inner"></span>
-  </a>
-  <!-- End Go to Top -->
+<!-- ========== FOOTER ========== -->
+@@include('app/partials/footer.html')
+<!-- ========== END FOOTER ========== -->
 
-  <!-- Scripts-->
-  @@include('app/partials/scripts.html')
+<!-- Go to Top -->
+<a class="js-go-to u-go-to" href="#"
+   data-position='{"bottom": 15, "right": 15 }'
+   data-type="fixed"
+   data-offset-top="400"
+   data-compensation="#header"
+   data-show-effect="slideInUp"
+   data-hide-effect="slideOutDown">
+  <span class="fa fa-arrow-up u-go-to__inner"></span>
+</a>
+<!-- End Go to Top -->
 
-  <!-- JS Plugins Init. -->
-  <script>
-    $(window).on('load', function () {
-      // initialization of HSMegaMenu component
-      $('.js-mega-menu').HSMegaMenu({
-        event: 'hover',
-        pageContainer: $('.container'),
-        breakpoint: 768,
-        hideTimeOut: 0
-      });
+<!-- Scripts-->
+@@include('app/partials/scripts.html')
+@@include('app/partials/learn-more-modal.html')
+
+<!-- JS Plugins Init. -->
+<script>
+  $(window).on('load', function () {
+    // initialization of HSMegaMenu component
+    $('.js-mega-menu').HSMegaMenu({
+      event: 'hover',
+      pageContainer: $('.container'),
+      breakpoint: 768,
+      hideTimeOut: 0
+    });
+  });
+
+  $(document).on('ready', function () {
+    // initialization of header
+    $.HSCore.components.HSHeader.init($('#header'));
+
+    // initialization of unfold component
+    $.HSCore.components.HSUnfold.init($('[data-unfold-target]'), {
+      afterOpen: function () {
+        $(this).find('input[type="search"]').focus();
+      }
     });
 
-    $(document).on('ready', function () {
-      // initialization of header
-      $.HSCore.components.HSHeader.init($('#header'));
+    // initialization of malihu scrollbar
+    $.HSCore.components.HSMalihuScrollBar.init($('.js-scrollbar'));
 
-      // initialization of unfold component
-      $.HSCore.components.HSUnfold.init($('[data-unfold-target]'), {
-        afterOpen: function () {
-          $(this).find('input[type="search"]').focus();
+    // initialization of show animations
+    $.HSCore.components.HSShowAnimation.init('.js-animation-link');
+
+    // initialization of form validation
+    $.HSCore.components.HSValidation.init('.js-validate', {
+      rules: {
+        confirm_password: {
+          equalTo: '#password'
         }
-      });
-
-      // initialization of malihu scrollbar
-      $.HSCore.components.HSMalihuScrollBar.init($('.js-scrollbar'));
-
-      // initialization of show animations
-      $.HSCore.components.HSShowAnimation.init('.js-animation-link');
-
-      // initialization of form validation
-      $.HSCore.components.HSValidation.init('.js-validate', {
-        rules: {
-          confirm_password: {
-            equalTo: '#password'
-          }
-        }
-      });
-
-      // initialization of forms
-      $.HSCore.helpers.HSFocusState.init();
-
-      // initialization of go to
-      $.HSCore.components.HSGoTo.init('.js-go-to');
+      }
     });
 
-    // initialization of google map
-    function initMap() {
-      $.HSCore.components.HSGMap.init('.js-g-map');
-      $.HSCore.components.HSGMap.init('#gMapMultipleMarkers', {
-        infoWindowTemplate: function (imgsrc, imgalt, date, locationname, title) {
-          return '<div class="u-gmap-v1__info">' +
-            '<img class="img-fluid mb-2" src="' + imgsrc + '" alt="' + imgalt + '">' +
-            '<small class="d-block text-muted mb-2">' + date + '</small>' +
-            '<h4 class="h6 mb-0">' + title + '</h4>' +
-            '<p class="mb-0">' + locationname + '</p>' +
-            '</div>';
-        }
-      });
-    }
-  </script>
+    // initialization of forms
+    $.HSCore.helpers.HSFocusState.init();
 
-  <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyAtt1z99GtrHZt_IcnK-wryNsQ30A112J0&callback=initMap" async defer></script>
+    // initialization of go to
+    $.HSCore.components.HSGoTo.init('.js-go-to');
+  });
+</script>
 </body>
 </html>

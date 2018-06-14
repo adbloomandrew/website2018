@@ -1,0 +1,41 @@
+.about-hero-section {
+  @include relative;
+  @include flex(row, center, center);
+  background-image: url("/images/about-hero-background.png");
+  background-size: cover;
+  background-position: bottom center;
+
+  .title {
+    @include media-breakpoint-up(lg) {
+      font-size: 72px;
+      font-weight: 700;
+    }
+    @include media-breakpoint-between(sm, md) {
+      font-size: 48px;
+      font-weight: 700;
+    }
+    @include media-breakpoint-down(sm) {
+      font-size: 36px;
+      font-weight: 700;
+    }
+  }
+  .flag {
+    @include size(25px, 15px);
+    margin-left: 5px;
+  }
+  .subtitle {
+    font-weight: 400;
+    color: #77838f;
+
+    @include media-breakpoint-up(md) {
+      font-size: 20px;
+    }
+    @include media-breakpoint-down(sm) {
+      font-size: 16px;
+    }
+  }
+  .scroll-down-link {
+    @include absolute(bottom 0 left 50%);
+    transform: translateX(-50%);
+  }
+}

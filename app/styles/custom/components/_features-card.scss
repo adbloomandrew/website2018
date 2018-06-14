@@ -1,0 +1,28 @@
+$transition-time: 0.3s;
+
+.u-features-cards {
+  @include relative;
+  @include size(100%);
+  background: $white;
+  box-shadow: 0 3px 15px transparentize($black, 0.94);
+  padding: 30px 20px;
+  transition: all $transition-time ease;
+  border-radius: 6px;
+  max-width: 385px;
+  margin: 0 auto;
+  z-index: 0;
+
+  .icon-wrap {
+    margin-bottom: 25px;
+    svg {
+      @include svg-icon($width: 150px, $height: 130px);
+    }
+  }
+
+  .card-title {
+    user-select: none;
+    @include media-breakpoint-down(sm) {
+      font-size: 16px;
+    }
+  }
+}
