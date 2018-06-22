@@ -72,3 +72,14 @@
 .min-height-3-lines {
   min-height: 2.5rem;
 }
+
+
+.process-illustration {
+  width: 100%;
+  @include media-breakpoint-down(md) {
+    max-width: 250px;
+  }
+  @include media-breakpoint-down(sm) {
+    max-width: 200px;
+  }
+}

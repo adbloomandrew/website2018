@@ -90,6 +90,10 @@
 	.u-space-5-top--sm {
 		@include px-to-rem(padding-top, $g-space-5);
 	}
+
+  .u-space-2-top--sm {
+    @include px-to-rem(padding-top, $g-space-2);
+  }
 }
 
 // Medium Devices
@@ -101,6 +105,10 @@
 	.u-space-2-top--md {
 		@include px-to-rem(padding-top, $g-space-2);
 	}
+
+  .u-space-2-bottom--md {
+    @include px-to-rem(padding-bottom, $g-space-2);
+  }
 
   .u-space-4-top--md {
     @include px-to-rem(padding-top, $g-space-4);
