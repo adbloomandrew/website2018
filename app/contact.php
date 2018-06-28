@@ -20,16 +20,12 @@ $message = $_POST['message'];
 
 // Create the email and send the message
 
-//change this mail address
-$to = "serj.hulko@gmail.com";
+$to = "andrew@adbloom.com";
 
-$email_subject = "Learn more form:  $name";
-$email_body = "You have received a new message from http://www.adbloom.com learn more form.\n\n Name: $name \n\n Email: $email \n\n URL: $url \n\n Company: $company \n\n Message: \n\n $message";
-$headers = "From: $email\n";
+$subject = "New message from $name";
+$content = "You have received a new message from http://www.adbloom.com learn more form.\n\n Name: $name \n\n Email: $email \n\n URL: $url \n\n Company: $company \n\n Message: \n\n $message";
 
-debug_to_console($email_body);
-
-if(mail($to, $email_subject, $email_body, $headers)){
+if(mail($to, $subject, $content)){
     return true;
 }
 else{

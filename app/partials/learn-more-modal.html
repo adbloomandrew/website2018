@@ -20,17 +20,9 @@
       trigger: 'change'
     })
 
-    // test data
-    $("#learnMoreName").val('Serhii Hulko');
-    $("#learnMoreEmail").val('gulkobox@gmail.com');
-    $("#learnMoreURL").val('adbloom.com');
-    $("#learnMoreCompany").val('Adbloom');
-    $("#learnMoreMessage").val('test message');
-
     learnMoreForm.submit(function (e) {
       e.preventDefault(); // prevent default submit behaviour
       if ($(this).parsley().isValid()) {
-        const submitBtn = $('#learnMoreSubmit');
         const name = $("#learnMoreName").val();
         const email = $("#learnMoreEmail").val();
         const url = $("#learnMoreURL").val();
@@ -38,7 +30,7 @@
         const message = $("#learnMoreMessage").val();
 
         $.ajax({
-          url: "",
+          url: "/contact.php",
           type: "POST",
           data: {
             name: name,
@@ -54,7 +46,8 @@
             learnMoreForm.fadeOut();
             successMessageBlock.fadeIn();
           },
-          error: function () {
+          error: function (error) {
+            console.log(error)
             learnMoreForm.fadeOut();
             errorMessageBlock.fadeIn();
           }
@@ -166,7 +159,7 @@
                 placeholder="Hi there, I would like to ..."
                 aria-label="Hi there, I would like to ..."
                 data-parsley-minlength="10"
-                data-parsley-error-message="Please enter a reason."
+                data-parsley-error-message="Please enter a message."
                 data-error-class="u-has-error"
                 data-success-class="u-has-success"></textarea>
         </div>
