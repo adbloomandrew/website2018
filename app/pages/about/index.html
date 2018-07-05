@@ -89,6 +89,7 @@
         </div>
       </div>
       <div class="row justify-content-around">
+
         <div class="col-12 col-md-6 col-lg-5 mb-4 mb-md-0">
           <div class="team-card-external">
             <div class="team-card-internal">
@@ -148,92 +149,94 @@
 
     <div class="w-lg-80 mx-auto">
       <!-- Contacts Form -->
-      <form class="js-validate">
+      <form class="js-validate" id="contactForm" data-parsley-validate>
         <div class="row">
-          <!-- Input -->
-          <div class="col-sm-6 mb-6">
-            <div class="js-form-message">
+
+          <!-- Name -->
+          <div class="col-sm-6">
+            <div class="js-form-message mb-6">
               <label class="h6 small d-block text-uppercase">
                 Your name
                 <span class="text-danger">*</span>
               </label>
 
               <div class="js-focus-state input-group u-form">
-                <input class="form-control u-form__input" type="text" name="name" required
+                <input class="form-control u-form__input" type="text" required
+                       id="contactFormName"
                        placeholder="Jack Wayley"
                        aria-label="Jack Wayley"
-                       data-msg="Please enter your name."
+                       data-parsley-length="[4, 20]"
+                       data-parsley-debounce="500"
+                       data-parsley-error-message="Please enter your frist name."
                        data-error-class="u-has-error"
                        data-success-class="u-has-success">
               </div>
             </div>
           </div>
-          <!-- End Input -->
 
-          <!-- Input -->
-          <div class="col-sm-6 mb-6">
-            <div class="js-form-message">
+          <!-- Email -->
+          <div class="col-sm-6">
+            <div class="js-form-message mb-6">
               <label class="h6 small d-block text-uppercase">
                 Your email address
                 <span class="text-danger">*</span>
               </label>
 
               <div class="js-focus-state input-group u-form">
-                <input class="form-control u-form__input" type="email" name="email" required
+                <input class="form-control u-form__input" type="email" required
+                       id="learnMoreEmail"
                        placeholder="jackwayley@gmail.com"
                        aria-label="jackwayley@gmail.com"
-                       data-msg="Please enter a valid email address."
+                       data-parsley-type="email"
+                       data-parsley-error-message="Please enter a valid email address."
+                       data-parsley-debounce="500"
                        data-error-class="u-has-error"
                        data-success-class="u-has-success">
               </div>
             </div>
           </div>
-          <!-- End Input -->
 
           <div class="w-100"></div>
 
           <!-- Input -->
-          <div class="col-sm-6 mb-6">
-            <div class="js-form-message">
-              <label class="h6 small d-block text-uppercase">
-                Subject
-                <span class="text-danger">*</span>
-              </label>
+          <div class="col-sm-6">
+            <!-- Website URL -->
+            <div class="mb-6">
+              <label class="h6 small d-block text-uppercase">Your website URL</label>
 
               <div class="js-focus-state input-group u-form">
-                <input class="form-control u-form__input" type="text" name="subject" required
-                       placeholder="Web design"
-                       aria-label="Web design"
-                       data-msg="Please enter a subject."
-                       data-error-class="u-has-error"
-                       data-success-class="u-has-success">
+                <input class="form-control u-form__input" type="url"
+                       required
+                       id="contactFormURL"
+                       data-parsley-type="url"
+                       data-parsley-debounce="500"
+                       data-parsley-error-message="Please enter a valid URL address."
+                       placeholder="https://www.jackwayley.com"
+                       aria-label="https://www.jackwayley.com">
               </div>
             </div>
           </div>
-          <!-- End Input -->
 
-          <!-- Input -->
-          <div class="col-sm-6 mb-6">
-            <div class="js-form-message">
-              <label class="h6 small d-block text-uppercase">
-                Your Phone Number
-                <span class="text-danger">*</span>
-              </label>
+          <!-- Company name -->
+          <div class="col-sm-6">
+            <div class="mb-6">
+              <label class="h6 small d-block text-uppercase">Your company name</label>
 
               <div class="js-focus-state input-group u-form">
-                <input class="form-control u-form__input" type="number" name="phone" required
-                       placeholder="1-800-643-4500"
-                       aria-label="1-800-643-4500"
-                       data-msg="Please enter a valid phone number."
-                       data-error-class="u-has-error"
-                       data-success-class="u-has-success">
+                <input class="form-control u-form__input" type="text"
+                       required
+                       id="contactFormCompany"
+                       placeholder="JackWayley Inc."
+                       aria-label="JackWayley Inc."
+                       data-parsley-length="[4, 30]"
+                       data-parsley-debounce="500"
+                       data-parsley-error-message="Please enter your company name.">
               </div>
             </div>
           </div>
-          <!-- End Input -->
         </div>
 
-        <!-- Input -->
+        <!-- Message -->
         <div class="js-form-message mb-9">
           <label class="h6 small d-block text-uppercase">
             How can we help you?
@@ -241,19 +244,19 @@
           </label>
 
           <div class="js-focus-state input-group u-form">
-              <textarea class="form-control u-form__input" rows="4" name="text" required
-                        placeholder="Hi there, I would like to ..."
-                        aria-label="Hi there, I would like to ..."
-                        data-msg="Please enter a message."
-                        data-error-class="u-has-error"
-                        data-success-class="u-has-success"></textarea>
+      <textarea class="form-control u-form__input" rows="4" required
+                id="contactFormMessage"
+                placeholder="Hi there, I would like to ..."
+                aria-label="Hi there, I would like to ..."
+                data-parsley-minlength="10"
+                data-parsley-error-message="Please enter a message."
+                data-error-class="u-has-error"
+                data-success-class="u-has-success"></textarea>
           </div>
         </div>
-        <!-- End Input -->
 
         <div class="text-center">
-          <button type="submit" class="btn btn-primary u-btn-primary u-btn-wide transition-3d-hover mb-4">Submit
-          </button>
+          <button type="submit" class="btn btn-primary u-btn-primary u-btn-wide transition-3d-hover mb-4">Submit</button>
         </div>
       </form>
       <!-- End Contacts Form -->
@@ -326,7 +329,57 @@
 
     // initialization of go to
     $.HSCore.components.HSGoTo.init('.js-go-to');
+
+
+
+    //    variables
+    const contactForm = $('#contactForm');
+    const errorMessageBlock = $('.message-block__error');
+    const successMessageBlock = $('.message-block__success');
+
+    // initialize form validation
+    contactForm.parsley({
+      trigger: 'change'
+    })
+
+    contactForm.submit(function (e) {
+      e.preventDefault(); // prevent default submit behaviour
+      if ($(this).parsley().isValid()) {
+        const name = $("#contactFormName").val();
+        const email = $("#contactFormEmail").val();
+        const url = $("#contactFormURL").val();
+        const company = $("#contactFormCompany").val();
+        const message = $("#contactFormMessage").val();
+
+        $.ajax({
+          url: "/contact.php",
+          type: "POST",
+          data: {
+            name: name,
+            email: email,
+            url: url,
+            company: company,
+            message: message
+          },
+          cache: false,
+          success: function () {
+            //clear all fields
+            contactForm.trigger("reset");
+            contactForm.fadeOut();
+            successMessageBlock.fadeIn();
+          },
+          error: function (error) {
+            console.log(error)
+            contactForm.fadeOut();
+            errorMessageBlock.fadeIn();
+          }
+        })
+      }
+    });
   });
+
+
 </script>
+
 </body>
 </html>
