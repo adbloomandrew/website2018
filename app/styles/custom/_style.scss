@@ -70,7 +70,9 @@
 }
 
 .min-height-3-lines {
-  min-height: 2.5rem;
+  @include media-breakpoint-down(sm) {
+    min-height: 9rem;
+  }
 }
 
 
