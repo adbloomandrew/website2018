@@ -13,6 +13,12 @@
   background-image: linear-gradient(270deg, #3c285f 0%, #2b1c44 100%);
 }
 
+.u-gradient-overlay-half-primary-v4 {
+  &:before {
+    background-image: linear-gradient(270deg, transparentize(#3c285f, 0.2) 0%, transparentize(#2b1c44, 0.3) 100%);
+  }
+}
+
 .u-icon-primary--air {
   background-color: transparentize($primary, 0.9);
   color: $primary;
