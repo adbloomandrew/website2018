@@ -4,6 +4,16 @@
   <!-- Title -->
   <title>About | Adbloom</title>
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-97648764-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-97648764-1');
+  </script>
+
   <!-- Required Meta Tags Always Come First -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -145,11 +155,11 @@
         <!-- Title -->
         <div class="mb-7">
           <h2 class="text-primary font-weight-normal">
-            <span class="font-weight-bold">Tell us</span>
+            <span class="font-weight-bold">Adbloom HQ</span>
             <br>
-            about yourself
+            Headquartered in Toronto, Canada
           </h2>
-          <p>Whether you have questions or you would just like to say hello, contact us.</p>
+          <p> Our offices are conveniently located in central downtown.</p>
         </div>
         <!-- End Title -->
 
@@ -222,7 +232,7 @@
           <!-- Info -->
           <div class="mb-5">
             <h3 class="h6 text-white">Phone number</h3>
-            <span class="d-block h5 text-warning">+1 (647) 793-4043</span>
+            <span class="d-block h5 text-warning"> +1 (866) 996-2098 </span>
           </div>
           <!-- End Info -->
 
@@ -252,9 +262,9 @@
   <div class="container u-space-3-bottom" id="contact">
     <!-- Title -->
     <div class="w-md-80 w-lg-50 text-center mx-auto mb-9">
-      <span class="u-label u-label--sm u-label--success mb-2">Leave a Message</span>
+      <span class="u-label u-label--sm u-label--success mb-2">Contact Us</span>
       <h2 class="text-primary font-weight-normal">Get in <span class="font-weight-bold">contact</span></h2>
-      <p>Whether you have questions or you would just like to say hello, contact us.</p>
+      <p>Want to learn more about Adbloom's performance growth service? Leave your info and we'll be in touch. </p>
     </div>
     <!-- End Title -->
 
@@ -439,8 +449,6 @@
 
     //    variables
     const contactForm = $('#contactForm');
-    const errorMessageBlock = $('.message-block__error');
-    const successMessageBlock = $('.message-block__success');
 
     // initialize form validation
     contactForm.parsley({
@@ -470,13 +478,10 @@
           success: function () {
             //clear all fields
             contactForm.trigger("reset");
-            contactForm.fadeOut();
-            successMessageBlock.fadeIn();
+            console.log('email has been sent')
           },
           error: function (error) {
             console.log(error)
-            contactForm.fadeOut();
-            errorMessageBlock.fadeIn();
           }
         })
       }
@@ -498,7 +503,7 @@
     });
   }
 </script>
-<script src="//maps.googleapis.com/maps/api/js?key=AIzaSyAtt1z99GtrHZt_IcnK-wryNsQ30A112J0&callback=initMap" async defer></script>
+<script src="//maps.googleapis.com/maps/api/js?key=AIzaSyDv03NC9-CSUTUWSGZJbu-tGJb2eSHsvDc&callback=initMap" async defer></script>
 
 </body>
 </html>
