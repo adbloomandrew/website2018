@@ -9,6 +9,10 @@
 @import "components/about-hero-section";
 @import "components/about-team-section";
 
+.background-white {
+  background-color: $g-white;
+}
+
 .u-gradient-half-primary-v4 {
   background-image: linear-gradient(270deg, #3c285f 0%, #2b1c44 100%);
 }
@@ -90,5 +94,11 @@
   @include media-breakpoint-down(sm) {
     width: 100%;
     max-width: 200px;
+  }
+}
+
+.text-white-lg {
+  @include media-breakpoint-up(lg) {
+    color: $g-white !important;
   }
 }

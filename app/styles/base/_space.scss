@@ -162,6 +162,14 @@
 	.u-space-bottom-0--lg {
 		padding-bottom: 0;
 	}
+
+  .u-space-top-0--lg {
+    padding-top: 0;
+  }
+
+  .u-space-1-top--lg {
+    @include px-to-rem(padding-top, $g-space-1);
+  }
 }
 
 // Large Devices
