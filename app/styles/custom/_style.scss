@@ -14,18 +14,35 @@
 }
 
 .u-gradient-half-primary-v4 {
-  background-image: linear-gradient(270deg, #3c285f 0%, #2b1c44 100%);
+  //background-image: linear-gradient(270deg, #123263 0%, #3c285f 100%);
+  background-color: #123263;
 }
 
 .u-gradient-overlay-half-primary-v4 {
   &:before {
-    background-image: linear-gradient(270deg, transparentize(#3c285f, 0.2) 0%, transparentize(#2b1c44, 0.3) 100%);
+    //background-image: linear-gradient(270deg, transparentize(#123263, 0.2) 0%, transparentize(#3c285f, 0.3) 100%);
+    background-color: transparentize(#123263, 0.2);
   }
 }
 
 .u-icon-primary--air {
   background-color: transparentize($primary, 0.9);
   color: $primary;
+}
+
+.u-icon-green--air {
+  background-color: $g-green;
+  color: $g-white;
+}
+
+.u-icon-orange--air {
+  background-color: $g-orange;
+  color: $g-white;
+}
+
+.u-icon-blue-light--air {
+  background-color: $g-blue-light;
+  color: $g-white;
 }
 
 .u-slick__arrow,
@@ -101,4 +118,16 @@
   @include media-breakpoint-up(lg) {
     color: $g-white !important;
   }
+}
+
+.text-green {
+  color: $g-green;
+}
+
+.text-orange {
+  color: $g-orange;
+}
+
+.text-blue-light {
+  color: $g-blue-light;
 }
