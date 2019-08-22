@@ -136,3 +136,28 @@
   max-width: 24rem;
   width: 100%;
 }
+
+.partner-logos-container {
+  @include flex(row, center, center, wrap);
+
+  .logos-wrapper {
+    @include media-breakpoint-up(md) {
+      flex: 0 0 50%;
+
+      &:nth-child(odd) {
+        @include flex(row, center, flex-end);
+      }
+      &:nth-child(even) {
+        @include flex(row, center, flex-start);
+      }
+    }
+    @include media-breakpoint-down(sm) {
+      flex: 0 0 100%;
+    }
+  }
+
+  .partners-img {
+    @include img-fluid;
+    flex-shrink: 0;
+  }
+}
