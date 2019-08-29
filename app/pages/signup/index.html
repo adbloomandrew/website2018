@@ -68,7 +68,8 @@
     </header>
     <!-- End Navbar -->
 
-    <div class="col-lg-5 col-xl-4 d-none d-lg-flex align-items-center u-gradient-half-primary-v4 min-height-100vh--lg px-0">
+    <div
+      class="col-lg-5 col-xl-4 d-none d-lg-flex align-items-center u-gradient-half-primary-v4 min-height-100vh--lg px-0">
       <div class="w-100 p-5">
         <div class="w-md-80 w-lg-60 text-center mx-auto">
           <blockquote class="h3 text-white font-weight-normal mb-4">
@@ -106,7 +107,7 @@
                          required
                          id="AffiliateCompany"
                          class="form-control u-form__input"
-                         data-msg="Please enter a valid company name."
+                         data-msg="Please enter a valid company / name"
                          data-error-class="u-has-error"
                          data-success-class="u-has-success">
                 </div>
@@ -122,7 +123,7 @@
                          value=""
                          required
                          id="AffiliateAddress1"
-                         data-msg="Please enter a valid company name."
+                         data-msg="Please enter a valid address."
                          data-error-class="u-has-error"
                          data-success-class="u-has-success">
                 </div>
@@ -138,7 +139,7 @@
                          value=""
                          required
                          id="AffiliateAddress2"
-                         data-msg="Please enter a valid company name."
+                         data-msg="Please enter a valid address."
                          data-error-class="u-has-error"
                          data-success-class="u-has-success">
                 </div>
@@ -154,7 +155,7 @@
                          value=""
                          required
                          id="AffiliateCity"
-                         data-msg="Please enter a valid company name."
+                         data-msg="Please enter a valid city."
                          data-error-class="u-has-error"
                          data-success-class="u-has-success">
                 </div>
@@ -168,7 +169,7 @@
                           id="AccountCreateCountry"
                           required
                           class="form-control u-form__input"
-                          data-msg="Please enter a valid company name."
+                          data-msg="Please enter a valid country."
                           data-error-class="u-has-error"
                           data-success-class="u-has-success">
                     <option value=""></option>
@@ -442,7 +443,7 @@
                          value=""
                          required
                          disabled="disabled"
-                         data-msg="Please enter a valid company name."
+                         data-msg="Please enter a valid country."
                          data-error-class="u-has-error"
                          data-success-class="u-has-success">
                 </div>
@@ -458,7 +459,7 @@
                          value=""
                          required
                          id="AffiliateRegion"
-                         data-msg="Please enter a valid company name."
+                         data-msg="Please enter a valid region"
                          data-error-class="u-has-error"
                          data-success-class="u-has-success">
                 </div>
@@ -473,7 +474,7 @@
                           disabled="disabled"
                           required
                           class="form-control u-form__input"
-                          data-msg="Please enter a valid company name."
+                          data-msg="Please enter a valid state"
                           data-error-class="u-has-error"
                           data-success-class="u-has-success">
                     <option value="AL">Alabama</option>
@@ -542,7 +543,7 @@
                           id="AccountCreateProvince"
                           required
                           class="form-control u-form__input"
-                          data-msg="Please enter a valid company name."
+                          data-msg="Please enter a valid province / territory"
                           data-error-class="u-has-error"
                           data-success-class="u-has-success">
                     <option value="AB">Alberta</option>
@@ -574,7 +575,7 @@
                          value=""
                          required
                          id="AffiliateZipcode"
-                         data-msg="Please enter a valid company name."
+                         data-msg="Please enter a valid zipcode."
                          data-error-class="u-has-error"
                          data-success-class="u-has-success">
                 </div>
@@ -590,7 +591,7 @@
                          value=""
                          required
                          id="AffiliatePhone"
-                         data-msg="Please enter a valid company name."
+                         data-msg="Please enter a valid phone."
                          data-error-class="u-has-error"
                          data-success-class="u-has-success">
                 </div>
@@ -607,12 +608,12 @@
                 </label>
                 <div class="js-focus-state input-group u-form">
                   <input name="data[AffiliateUser][email]"
-                         type="text"
+                         type="email"
                          value=""
                          required
                          id="AffiliateUserEmail"
                          class="form-control u-form__input"
-                         data-msg="Please enter a valid company name."
+                         data-msg="Please enter a valid e-mail address."
                          data-error-class="u-has-error"
                          data-success-class="u-has-success">
                 </div>
@@ -628,11 +629,15 @@
                          required
                          id="AffiliateUserPassword"
                          class="form-control u-form__input"
-                         data-msg="Please enter a valid company name."
+                         data-msg="Please enter a valid password"
                          data-error-class="u-has-error"
                          data-success-class="u-has-success">
                 </div>
-                <div class="small text-muted">
+                <div id="PasswordError" class="small text-danger d-none">
+                  Please choose a strong password (e.g.: A combination of upper case letters, lower case letters,
+                  numbers, and/or special characters)
+                </div>
+                <div class="small text-muted" id="passwordNotification">
                   Password must be between 6 and 16 characters
                 </div>
               </div>
@@ -647,13 +652,13 @@
                          required
                          id="AffiliateUserPasswordConfirmation"
                          class="form-control u-form__input"
-                         data-msg="Please enter a valid company name."
+                         data-msg="Please enter a valid password."
                          data-error-class="u-has-error"
                          data-success-class="u-has-success">
                 </div>
-                <span id="PasswordConfirmationError" style="display: none;">
-                    Password confirmation doesn't match
-                  </span>
+                <span id="PasswordConfirmationError" class="small text-danger d-none">
+                  Password confirmation doesn't match
+                </span>
               </div>
               <div class="js-form-message mb-4">
                 <label for="AffiliateUserFirstName" class="h6 small d-block text-uppercase">
@@ -666,7 +671,7 @@
                          required
                          id="AffiliateUserFirstName"
                          class="form-control u-form__input"
-                         data-msg="Please enter a valid company name."
+                         data-msg="Please enter a valid first name."
                          data-error-class="u-has-error"
                          data-success-class="u-has-success">
                 </div>
@@ -682,7 +687,7 @@
                          required
                          id="AffiliateUserLastName"
                          class="form-control u-form__input"
-                         data-msg="Please enter a valid company name."
+                         data-msg="Please enter a valid last name."
                          data-error-class="u-has-error"
                          data-success-class="u-has-success">
                 </div>
@@ -697,7 +702,7 @@
                          value=""
                          id="AffiliateUserTitle"
                          class="form-control u-form__input"
-                         data-msg="Please enter a valid company name."
+                         data-msg="Please enter a valid title."
                          data-error-class="u-has-error"
                          data-success-class="u-has-success">
                 </div>
@@ -713,9 +718,12 @@
                   What is your website(s) URL?:&nbsp;*
                 </label>
                 <textarea name="data[SignupAnswer][2][answer]"
-                          class="form-control u-form__input"
                           id="AdditionalURL"
-                          required></textarea>
+                          required
+                          class="form-control u-form__input"
+                          data-msg="Please enter a valid website(s) URL."
+                          data-error-class="u-has-error"
+                          data-success-class="u-has-success"></textarea>
                 <input type="hidden" name="data[SignupAnswer][2][signup_question_id]" value="2">
                 <input type="hidden" name="data[SignupAnswer][2][class]" value="textarea">
                 <input type="hidden" name="data[SignupAnswer][2][required]" value="1">
@@ -727,7 +735,10 @@
                 </label>
                 <textarea name="data[SignupAnswer][8][answer]"
                           id="AdditionalVisitorsCount"
-                          class="form-control u-form__input"></textarea>
+                          class="form-control u-form__input"
+                          data-msg="Please enter a valid monthly unique visitors."
+                          data-error-class="u-has-error"
+                          data-success-class="u-has-success"></textarea>
                 <input type="hidden" name="data[SignupAnswer][8][signup_question_id]" value="8">
                 <input type="hidden" name="data[SignupAnswer][8][class]" value="textarea">
                 <input type="hidden" name="data[SignupAnswer][8][required]" value="0">
@@ -739,7 +750,10 @@
                 </label>
                 <textarea name="data[SignupAnswer][10][answer]"
                           id="AdditionalSubscribers"
-                          class="form-control u-form__input"></textarea>
+                          class="form-control u-form__input"
+                          data-msg="Please enter a valid newsletter subscribers number."
+                          data-error-class="u-has-error"
+                          data-success-class="u-has-success"></textarea>
                 <input type="hidden" name="data[SignupAnswer][10][signup_question_id]" value="10">
                 <input type="hidden" name="data[SignupAnswer][10][class]" value="textarea">
                 <input type="hidden" name="data[SignupAnswer][10][required]" value="0">
@@ -751,7 +765,10 @@
                 </label>
                 <textarea name="data[SignupAnswer][12][answer]"
                           id="AdditionalFollowers"
-                          class="form-control u-form__input"></textarea>
+                          class="form-control u-form__input"
+                          data-msg="Please enter a valid social followers"
+                          data-error-class="u-has-error"
+                          data-success-class="u-has-success"></textarea>
                 <input type="hidden" name="data[SignupAnswer][12][signup_question_id]" value="12">
                 <input type="hidden" name="data[SignupAnswer][12][class]" value="textarea">
                 <input type="hidden" name="data[SignupAnswer][12][required]" value="0">
@@ -790,13 +807,15 @@
 @@include('app/partials/scripts.html')
 
 <script src="/scripts/account-geography.js"></script>
-<script src="/scripts/password-strength.min.js"></script>
+<script src="/scripts/password-strength.js"></script>
 
 <!-- JS Plugins Init. -->
 <script>
   $(document).on('ready', function () {
     // initialization of forms
     $.HSCore.helpers.HSFocusState.init();
+    // initialization of form validation
+    $.HSCore.components.HSValidation.init('.js-validate');
   });
 </script>
 </body>
