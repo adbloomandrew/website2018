@@ -10,38 +10,44 @@ function manageFormFields(country) {
 
   switch (country) {
     case "US":
-      accountCreateStateContainer.show();
+      accountCreateStateContainer.removeClass("d-none");
       accountCreateState.removeAttr("disabled");
-      accountCreateProvinceContainer.hide();
-      accountCreateProvince.attr("disabled", false);
-      accountCreateRegionContainer.hide();
-      accountCreateRegion.attr("disabled", false);
-      accountCreateCountryTextContainer.hide();
-      accountCreateCountryText.attr("disabled", false);
+      accountCreateProvinceContainer.addClass("d-none");
+      accountCreateProvince.attr("disabled", true);
+      accountCreateRegionContainer.addClass("d-none");
+      accountCreateRegion.attr("disabled", true);
+      accountCreateCountryTextContainer.addClass("d-none");
+      accountCreateCountryText.attr("disabled", true);
       break;
     case "CA":
-      accountCreateStateContainer.hide();
-      accountCreateState.attr("disabled", false);
-      accountCreateProvinceContainer.show();
+      accountCreateStateContainer.addClass("d-none");
+      accountCreateState.attr("disabled", true);
+      accountCreateProvinceContainer.removeClass("d-none");
       accountCreateProvince.removeAttr("disabled");
-      accountCreateRegionContainer.hide();
-      accountCreateRegion.attr("disabled", false);
-      accountCreateCountryTextContainer.hide();
-      accountCreateCountryText.attr("disabled", false);
+      accountCreateRegionContainer.addClass("d-none");
+      accountCreateRegion.attr("disabled", true);
+      accountCreateCountryTextContainer.addClass("d-none");
+      accountCreateCountryText.attr("disabled", true);
       break;
     case "other":
-      accountCreateCountryTextContainer.show();
+      accountCreateCountryTextContainer.removeClass("d-none");
       accountCreateCountryText.removeAttr("disabled");
+      accountCreateStateContainer.addClass("d-none");
+      accountCreateState.attr("disabled", true);
+      accountCreateProvinceContainer.addClass("d-none");
+      accountCreateProvince.attr("disabled", true);
+      accountCreateRegionContainer.removeClass("d-none");
+      accountCreateRegion.removeAttr("disabled");
       break;
     default:
-      accountCreateStateContainer.hide();
-      accountCreateState.attr("disabled", false);
-      accountCreateProvinceContainer.hide();
-      accountCreateProvince.attr("disabled", false);
-      accountCreateRegionContainer.show();
+      accountCreateStateContainer.addClass("d-none");
+      accountCreateState.attr("disabled", true);
+      accountCreateProvinceContainer.addClass("d-none");
+      accountCreateProvince.attr("disabled", true);
+      accountCreateRegionContainer.removeClass("d-none");
       accountCreateRegion.removeAttr("disabled");
-      accountCreateCountryTextContainer.hide();
-      accountCreateCountryText.attr("disabled", false);
+      accountCreateCountryTextContainer.addClass("d-none");
+      accountCreateCountryText.attr("disabled", true);
       break;
   }
 }

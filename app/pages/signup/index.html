@@ -83,7 +83,7 @@
       <div class="row no-gutters max-height-100">
         <div class="col-md-8 col-lg-7 col-xl-6 offset-md-2 offset-lg-2 offset-xl-3">
           <!-- Form -->
-          <form class="js-validate mt-5" action="https://adbloom.hasoffers.com/" method="post">
+          <form class="js-validate mt-5" id="signUpForm">
             <input name="_method" type="hidden" value="POST"/>
 
             <!-- Title -->
@@ -431,7 +431,7 @@
                   </select>
                 </div>
               </div>
-              <div id="AccountCreateCountryTextContainer" style="display: none;" class="js-form-message mb-4">
+              <div id="AccountCreateCountryTextContainer" class="js-form-message mb-4 d-none">
                 <label for="AccountCreateCountryText" class="h6 small d-block text-uppercase">
                   Country (other): *
                 </label>
@@ -448,8 +448,8 @@
                          data-success-class="u-has-success">
                 </div>
               </div>
-              <div id="AccountCreateRegionContainer" style="display: none;" class="js-form-message mb-4">
-                <label for="AffiliateRegion" class="h6 small d-block text-uppercase">
+              <div id="AccountCreateRegionContainer" class="js-form-message mb-4 d-none">
+                <label for="AccountCreateRegion" class="h6 small d-block text-uppercase">
                   Region: *
                 </label>
                 <div class="js-focus-state input-group u-form">
@@ -458,13 +458,13 @@
                          class="form-control u-form__input"
                          value=""
                          required
-                         id="AffiliateRegion"
+                         id="AccountCreateRegion"
                          data-msg="Please enter a valid region"
                          data-error-class="u-has-error"
                          data-success-class="u-has-success">
                 </div>
               </div>
-              <div id="AccountCreateStateContainer" style="display: none;" class="js-form-message mb-4">
+              <div id="AccountCreateStateContainer" class="js-form-message mb-4 d-none">
                 <label for="AccountCreateState" class="h6 small d-block text-uppercase">
                   State: *
                 </label>
@@ -472,7 +472,6 @@
                   <select name="data[Affiliate][region]"
                           id="AccountCreateState"
                           disabled="disabled"
-                          required
                           class="form-control u-form__input"
                           data-msg="Please enter a valid state"
                           data-error-class="u-has-error"
@@ -534,14 +533,13 @@
                   </select>
                 </div>
               </div>
-              <div id="AccountCreateProvinceContainer" style="display: block;" class="js-form-message mb-4">
-                <label for="AccountCreateProvince" class="h6 small d-block text-uppercase">
+              <div id="AccountCreateProvinceContainer" class="js-form-message mb-4">
+                <label for="AccountCreateProvince" class="h6 small text-uppercase">
                   Province / Territory: *
                 </label>
                 <div class="js-focus-state input-group u-form">
                   <select name="data[Affiliate][region]"
                           id="AccountCreateProvince"
-                          required
                           class="form-control u-form__input"
                           data-msg="Please enter a valid province / territory"
                           data-error-class="u-has-error"
@@ -565,7 +563,7 @@
                 </div>
               </div>
               <div class="js-form-message mb-4">
-                <label for="AffiliateZipcode" class="h6 small d-block text-uppercase">
+                <label for="AffiliateZipCode" class="h6 small d-block text-uppercase">
                   Zipcode: *
                 </label>
                 <div class="js-focus-state input-group u-form">
@@ -574,7 +572,7 @@
                          class="form-control u-form__input"
                          value=""
                          required
-                         id="AffiliateZipcode"
+                         id="AffiliateZipCode"
                          data-msg="Please enter a valid zipcode."
                          data-error-class="u-has-error"
                          data-success-class="u-has-success">
@@ -786,7 +784,7 @@
               </div>
 
               <div class="col-6 text-right">
-                <button type="submit" value="Login"
+                <button type="submit" value="Login" id="signUpButton"
                         class="btn btn-primary u-btn-primary transition-3d-hover">
                   Sign Up
                 </button>
@@ -806,8 +804,11 @@
 <!-- Scripts-->
 @@include('app/partials/scripts.html')
 
+<!-- build:js @@webRoot/scripts/sign-up.js -->
 <script src="/scripts/account-geography.js"></script>
 <script src="/scripts/password-strength.js"></script>
+<script src="/scripts/signup.js"></script>
+<!-- endbuild -->
 
 <!-- JS Plugins Init. -->
 <script>
