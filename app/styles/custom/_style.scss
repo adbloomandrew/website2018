@@ -162,16 +162,18 @@
   }
 }
 
-.max-height-100 {
-  max-height: 100%;
-  overflow-y: auto;
-}
-
 .header-offset {
-  max-height: 100vh;
-  overflow: auto;
-
   @include media-breakpoint-down(md) {
     padding-top: 150px;
+  }
+}
+
+.fixed-blockquote {
+  @include absolute(top 0 left 0);
+}
+
+.blue-link {
+  @include plain-hover-focus {
+    color: $g-blue-darker;
   }
 }

@@ -69,8 +69,8 @@
     <!-- End Navbar -->
 
     <div
-      class="col-lg-5 col-xl-4 d-none d-lg-flex align-items-center u-gradient-half-primary-v4 min-height-100vh--lg px-0">
-      <div class="w-100 p-5">
+      class="col-lg-5 col-xl-4 d-none d-lg-flex u-gradient-half-primary-v4 px-0">
+      <div class="w-100 min-height-100vh p-5 d-flex align-items-center position-absolute-top-0">
         <div class="w-md-80 w-lg-60 text-center mx-auto">
           <blockquote class="h3 text-white font-weight-normal mb-4">
             Adbloom and Fincon have partnered to bring bloggers and influencers amazing Personal Finance campaigns!
@@ -80,7 +80,7 @@
     </div>
 
     <div class="container header-offset">
-      <div class="row no-gutters max-height-100">
+      <div class="row no-gutters">
         <div class="col-md-8 col-lg-7 col-xl-6 offset-md-2 offset-lg-2 offset-xl-3">
           <!-- Form -->
           <form class="js-validate mt-5" id="signUpForm">
@@ -774,6 +774,29 @@
               </div>
             </div>
             <!-- End: Form group -->
+
+            <div class="form-group form-check d-flex align-items-center">
+              <input type="hidden" name="data[AffiliateUser][terms_agreement]" id="AffiliateUserTermsAgreement_"
+                     value="0">
+              <input type="checkbox" class="form-check-input mt-0" name="data[AffiliateUser][terms_agreement]"
+                     id="AffiliateUserTermsAgreement">
+              <label class="small d-block text-uppercase mb-0" for="AffiliateUserTermsAgreement">
+                I agree to the
+                <a href="https://my.adbloom.co/terms" target="_blank" rel="noopener noreferrer" class="blue-link">
+                  Terms and Conditions
+                </a>
+              </label>
+            </div>
+
+            <div class="form-group form-check d-flex align-items-baseline">
+              <input type="hidden" name="data[AffiliateUser][terms_third_party_agreement]" id="AffiliateUserTermsThirdPartyAgreement_" value="0">
+              <input type="checkbox" class="form-check-input mt-0" name="data[AffiliateUser][terms_third_party_agreement]" id="AffiliateUserTermsThirdPartyAgreement">
+              <label class="small d-block text-uppercase mb-0" for="AffiliateUserTermsThirdPartyAgreement">
+                I hereby consent and allow the use of my and/or my company's information, including sharing with a third
+                party, to assess, detect, prevent or otherwise enable detection and prevention of malicious, invalid or
+                unlawful activity and/or general fraud prevention.
+              </label>
+            </div>
 
 
             <!-- Button -->
