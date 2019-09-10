@@ -163,13 +163,7 @@
 }
 
 .header-offset {
-  @include media-breakpoint-down(md) {
-    padding-top: 150px;
-  }
-}
-
-.fixed-blockquote {
-  @include absolute(top 0 left 0);
+  padding-top: 150px;
 }
 
 .blue-link {
