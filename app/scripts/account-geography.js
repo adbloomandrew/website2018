@@ -1,53 +1,53 @@
 function manageFormFields(country) {
-  var accountCreateStateContainer = $("#AccountCreateStateContainer");
-  var accountCreateState = $("select#AccountCreateState");
-  var accountCreateProvinceContainer = $("#AccountCreateProvinceContainer");
-  var accountCreateProvince = $("select#AccountCreateProvince");
-  var accountCreateRegionContainer = $("#AccountCreateRegionContainer");
-  var accountCreateRegion = $("input#AccountCreateRegion");
-  var accountCreateCountryTextContainer = $("#AccountCreateCountryTextContainer");
-  var accountCreateCountryText = $("input#AccountCreateCountryText");
+  var accountCreateState = {
+    container: $("#AccountCreateStateContainer"),
+    field: $("select#AccountCreateState")
+  }, accountCreateProvince = {
+    container: $("#AccountCreateProvinceContainer"),
+    field: $("select#AccountCreateProvince")
+  }, accountCreateRegion = {
+    container: $("#AccountCreateRegionContainer"),
+    field: $("input#AccountCreateRegion")
+  }, accountCreateCountryText = {
+    container: $("#AccountCreateCountryTextContainer"),
+    field: $("input#AccountCreateCountryText")
+  };
+
+  function manageFields(enableFields, disableFields) {
+    $(enableFields).each(function (idx) {
+      enableFields[idx].container.removeClass("d-none");
+      enableFields[idx].field.removeAttr("disabled");
+    });
+    $(disableFields).each(function (idx) {
+      disableFields[idx].container.addClass("d-none");
+      disableFields[idx].field.attr("disabled", true);
+    });
+  }
 
   switch (country) {
     case "US":
-      accountCreateStateContainer.removeClass("d-none");
-      accountCreateState.removeAttr("disabled");
-      accountCreateProvinceContainer.addClass("d-none");
-      accountCreateProvince.attr("disabled", true);
-      accountCreateRegionContainer.addClass("d-none");
-      accountCreateRegion.attr("disabled", true);
-      accountCreateCountryTextContainer.addClass("d-none");
-      accountCreateCountryText.attr("disabled", true);
+      manageFields(
+        [accountCreateState],
+        [accountCreateProvince, accountCreateRegion, accountCreateCountryText]
+      );
       break;
     case "CA":
-      accountCreateStateContainer.addClass("d-none");
-      accountCreateState.attr("disabled", true);
-      accountCreateProvinceContainer.removeClass("d-none");
-      accountCreateProvince.removeAttr("disabled");
-      accountCreateRegionContainer.addClass("d-none");
-      accountCreateRegion.attr("disabled", true);
-      accountCreateCountryTextContainer.addClass("d-none");
-      accountCreateCountryText.attr("disabled", true);
+      manageFields(
+        [accountCreateProvince],
+        [accountCreateState, accountCreateRegion, accountCreateCountryText]
+      );
       break;
     case "other":
-      accountCreateCountryTextContainer.removeClass("d-none");
-      accountCreateCountryText.removeAttr("disabled");
-      accountCreateStateContainer.addClass("d-none");
-      accountCreateState.attr("disabled", true);
-      accountCreateProvinceContainer.addClass("d-none");
-      accountCreateProvince.attr("disabled", true);
-      accountCreateRegionContainer.removeClass("d-none");
-      accountCreateRegion.removeAttr("disabled");
+      manageFields(
+        [accountCreateRegion, accountCreateCountryText],
+        [accountCreateState, accountCreateProvince]
+      );
       break;
     default:
-      accountCreateStateContainer.addClass("d-none");
-      accountCreateState.attr("disabled", true);
-      accountCreateProvinceContainer.addClass("d-none");
-      accountCreateProvince.attr("disabled", true);
-      accountCreateRegionContainer.removeClass("d-none");
-      accountCreateRegion.removeAttr("disabled");
-      accountCreateCountryTextContainer.addClass("d-none");
-      accountCreateCountryText.attr("disabled", true);
+      manageFields(
+        [accountCreateRegion],
+        [accountCreateState, accountCreateProvince, accountCreateCountryText]
+      );
       break;
   }
 }
