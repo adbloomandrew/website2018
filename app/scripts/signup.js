@@ -35,7 +35,7 @@ function parseResponse(data) {
       var errorList = $(userMessage).find("ul").addClass("error-messages-list");
       showErrorMessages(errorList);
     } else {
-      window.location.href = "/login/";
+      window.location.href = "/thank-you/";
     }
   }
 }
