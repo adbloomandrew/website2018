@@ -41,6 +41,10 @@
 
 <!-- ========== MAIN ========== -->
 <main id="content" role="main">
+  <div class="lds-ring-loader d-none" id="loader-animation">
+    <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+  </div>
+
   <!-- Form -->
   <div class="d-flex align-items-stratch position-relative">
     <!-- Navbar -->
@@ -56,7 +60,7 @@
         <!-- End Logo -->
 
         <!-- Button -->
-        <div class="p-3 p-sm-5 d-md-none d-xl-block">
+        <div class="p-3 p-sm-5">
           <a class="btn btn-sm btn-primary u-btn-primary transition-3d-hover"
              href="@@webRoot/login"
              rel="noopener noreferrer">
@@ -87,14 +91,16 @@
             <input name="_method" type="hidden" value="POST"/>
 
             <!-- Title -->
-            <div class="mb-7">
+            <div class="mb-5">
               <h2 class="h3 text-primary font-weight-normal mb-0">Get <span class="font-weight-bold">started</span></h2>
               <p>To apply for one of our personal finance campaigns, you must first quickly register with Adbloom:</p>
             </div>
             <!-- End Title -->
 
+            <div id="response-message" class="alert alert-danger d-none" role="alert"></div>
+
             <!-- Form group -->
-            <div class="form-group custom-form-group mb-5">
+            <div class="form-group custom-form-group mb-5 mt-2">
               <h3 class="h4 text-primary mb-4">Account Details</h3>
               <div class="js-form-message mb-4">
                 <label for="AffiliateCompany" class="h6 small d-block text-uppercase">
