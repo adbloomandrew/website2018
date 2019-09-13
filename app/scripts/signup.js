@@ -9,6 +9,7 @@ $(document).ready(function() {
         url: "https://my.adbloom.co/signup/",
         type: "post",
         dataType: "text",
+        crossDomain: true,
         data: $(form).serialize(),
         success: function(data) {
           parseResponse(data);
