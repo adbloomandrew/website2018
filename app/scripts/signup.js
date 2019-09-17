@@ -6,11 +6,13 @@ $(document).ready(function() {
     if(form.checkValidity()) {
       toggleLoader();
       $.ajax({
-        url: "https://my.adbloom.co/signup/",
+        url: "/proxy.php",
         type: "post",
         dataType: "text",
-        crossDomain: true,
         data: $(form).serialize(),
+        headers: {
+          "X-Proxy-URL": "https://my.adbloom.co/signup/"
+        },
         success: function(data) {
           parseResponse(data);
           toggleLoader();

@@ -1,5 +1,1 @@
 ErrorDocument 404 /404.html
-Header add Access-Control-Allow-Origin "*"
-Header set Access-Control-Allow-Origin "*"
-Header add Access-Control-Allow-Headers "origin, x-requested-with, content-type, x-requested-by, authorization"
-Header add Access-Control-Allow-Methods: "GET,POST,OPTIONS,DELETE,PUT"
