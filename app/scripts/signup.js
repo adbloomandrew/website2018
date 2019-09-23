@@ -9,17 +9,20 @@ $(document).ready(function() {
         url: "https://my.adbloom.co/signup/",
         type: "post",
         dataType: "text",
+        resolveWithFullResponse: true,
         data: $(form).serialize(),
         success: function(data) {
           parseResponse(data);
           toggleLoader();
         },
         error: function (xhr, ajaxOptions, thrownError) {
-          console.error(xhr.status);
-          console.error(ajaxOptions);
-          console.error(thrownError);
-          showErrorMessages("Oops! Something went wrong. Try again later");
+          console.error(xhr.status, ajaxOptions, thrownError);
           toggleLoader();
+          if(!xhr.status && !thrownError && ajaxOptions === "error") {
+            window.location.href = "/success/";
+          } else {
+            showErrorMessages("Oops! Something went wrong. Try again later");
+          }
         }
       });
     }
@@ -37,7 +40,7 @@ function parseResponse(data) {
       var errorList = $(userMessage).find("ul").addClass("error-messages-list");
       showErrorMessages(errorList);
     } else {
-      window.location.href = "/thank-you/";
+      window.location.href = "/success/";
     }
   }
 }
