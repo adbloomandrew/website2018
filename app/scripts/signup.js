@@ -6,19 +6,18 @@ $(document).ready(function() {
     if(form.checkValidity()) {
       toggleLoader();
       $.ajax({
-        url: "/proxy.php",
+        url: "https://my.adbloom.co/signup/",
         type: "post",
         dataType: "text",
         data: $(form).serialize(),
-        headers: {
-          "X-Proxy-URL": "https://my.adbloom.co/signup/"
-        },
         success: function(data) {
           parseResponse(data);
           toggleLoader();
         },
-        error: function (error) {
-          console.error(error);
+        error: function (xhr, ajaxOptions, thrownError) {
+          console.error(xhr.status);
+          console.error(ajaxOptions);
+          console.error(thrownError);
           showErrorMessages("Oops! Something went wrong. Try again later");
           toggleLoader();
         }
