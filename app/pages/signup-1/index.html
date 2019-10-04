@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Title -->
+  <title>Fincon Partner Sign Up | Adbloom Inc.</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-97648764-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', 'UA-97648764-1');
+  </script>
+
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <!-- Favicon -->
+  @@include('app/partials/favicon.html')
+
+  <!-- Fonts and styles -->
+  @@include('app/partials/styles.html')
+
+</head>
+
+<body>
+<!-- Skippy -->
+<a id="skippy" class="sr-only sr-only-focusable u-skippy" href="#content">
+  <div class="container">
+    <span class="u-skiplink-text">Skip to main content</span>
+  </div>
+</a>
+<!-- End Skippy -->
+
+<!-- ========== MAIN ========== -->
+<main id="content" role="main">
+  <div class="lds-ring-loader d-none" id="loader-animation">
+    <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+  </div>
+
+  <!-- Form -->
+  <div class="d-flex align-items-stratch position-relative">
+    <!-- Navbar -->
+    <header class="position-absolute-top-0 z-index-2">
+      <nav class="d-flex justify-content-between align-items-center">
+        <!-- Logo -->
+        <div class="col-lg-5 col-xl-4 text-lg-center px-0">
+          <a class="d-inline-block p-3 p-sm-5" href="@@webRoot/" aria-label="Front">
+            <img class="d-none d-lg-inline-block" src="/images/logos/ab-fin.png" alt="Logo" style="width: 140px;">
+            <img class="d-inline-block d-lg-none" src="/images/logos/ab-fin2.png" alt="Logo" style="width: 140px;">
+          </a>
+        </div>
+        <!-- End Logo -->
+
+        <!-- Button -->
+        <div class="p-3 p-sm-5">
+          <a class="btn btn-sm btn-primary u-btn-primary transition-3d-hover"
+             href="@@webRoot/login"
+             rel="noopener noreferrer">
+            Existing Partner? <br> Sign in
+          </a>
+        </div>
+        <!-- End Button -->
+      </nav>
+    </header>
+    <!-- End Navbar -->
+
+    <div
+      class="col-lg-5 col-xl-4 d-none d-lg-flex u-gradient-half-primary-v4 px-0">
+      <div class="w-100 min-height-100vh p-5 d-flex align-items-center position-absolute-top-0">
+        <div class="w-md-80 w-lg-60 text-center mx-auto">
+          <blockquote class="h3 text-white font-weight-normal mb-4">
+            Adbloom and Fincon have partnered to bring bloggers and influencers amazing Personal Finance campaigns!
+          </blockquote>
+        </div>
+      </div>
+    </div>
+
+    <div class="container header-offset">
+      <div class="row no-gutters">
+        <div class="col-md-8 col-lg-7 col-xl-6 offset-md-2 offset-lg-2 offset-xl-3">
+          <!-- Form -->
+          <div class="mt-5">
+
+            <!-- Title -->
+            <div class="mb-5">
+              <h2 class="h3 text-primary font-weight-normal mb-0">Get <span class="font-weight-bold">started</span></h2>
+              <p>To apply for one of our personal finance campaigns, you must first quickly register with Adbloom:</p>
+            </div>
+            <!-- End Title -->
+
+            <div id="response-message" class="alert alert-danger d-none" role="alert"></div>
+
+            <form class="js-validate" id="affiliateForm">
+              <div class="form-group custom-form-group mb-5 mt-2">
+                <h3 class="h4 text-primary mb-4">Account Details</h3>
+                <div class="js-form-message mb-4">
+                  <label for="AffiliateCompany" class="h6 small d-block text-uppercase">
+                    Company / Name: *
+                  </label>
+                  <div class="js-focus-state input-group u-form">
+                    <input name="account[company]"
+                           type="text"
+                           value=""
+                           required
+                           id="AffiliateCompany"
+                           class="form-control u-form__input"
+                           data-msg="Please enter a valid company / name"
+                           data-error-class="u-has-error"
+                           data-success-class="u-has-success">
+                  </div>
+                </div>
+                <div class="js-form-message mb-4">
+                  <label for="AffiliateAddress1" class="h6 small d-block text-uppercase">
+                    Address 1: *
+                  </label>
+                  <div class="js-focus-state input-group u-form">
+                    <input name="account[address1]"
+                           type="text"
+                           class="form-control u-form__input"
+                           value=""
+                           required
+                           id="AffiliateAddress1"
+                           data-msg="Please enter a valid address."
+                           data-error-class="u-has-error"
+                           data-success-class="u-has-success">
+                  </div>
+                </div>
+                <div class="js-form-message mb-4">
+                  <label for="AffiliateAddress2" class="h6 small d-block text-uppercase">
+                    Address 2:
+                  </label>
+                  <div class="js-focus-state input-group u-form">
+                    <input name="account[address2]"
+                           type="text"
+                           class="form-control u-form__input"
+                           value=""
+                           id="AffiliateAddress2"
+                           data-msg="Please enter a valid address."
+                           data-error-class="u-has-error"
+                           data-success-class="u-has-success">
+                  </div>
+                </div>
+                <div class="js-form-message mb-4">
+                  <label for="AffiliateCity" class="h6 small d-block text-uppercase">
+                    City: *
+                  </label>
+                  <div class="js-focus-state input-group u-form">
+                    <input name="account[city]"
+                           type="text"
+                           class="form-control u-form__input"
+                           value=""
+                           required
+                           id="AffiliateCity"
+                           data-msg="Please enter a valid city."
+                           data-error-class="u-has-error"
+                           data-success-class="u-has-success">
+                  </div>
+                </div>
+                <div id="AccountCreateCountryContainer" class="js-form-message mb-4">
+                  <label for="AccountCreateCountry" class="h6 small d-block text-uppercase">
+                    Country: *
+                  </label>
+                  <div class="js-focus-state input-group u-form">
+                    <select name="account[country]"
+                            id="AccountCreateCountry"
+                            required
+                            class="form-control u-form__input"
+                            data-msg="Please enter a valid country."
+                            data-error-class="u-has-error"
+                            data-success-class="u-has-success">
+                      <option value=""></option>
+                      <option value="AF">Afghanistan</option>
+                      <option value="AX">Aland Islands</option>
+                      <option value="AL">Albania</option>
+                      <option value="DZ">Algeria</option>
+                      <option value="AS">American Samoa</option>
+                      <option value="AD">Andorra</option>
+                      <option value="AO">Angola</option>
+                      <option value="AI">Anguilla</option>
+                      <option value="AQ">Antarctica</option>
+                      <option value="AG">Antigua And Barbuda</option>
+                      <option value="AR">Argentina</option>
+                      <option value="AM">Armenia</option>
+                      <option value="AW">Aruba</option>
+                      <option value="AP">Asia (Unknown Country)</option>
+                      <option value="AU">Australia</option>
+                      <option value="AT">Austria</option>
+                      <option value="AZ">Azerbaijan</option>
+                      <option value="BS">Bahamas</option>
+                      <option value="BH">Bahrain</option>
+                      <option value="BD">Bangladesh</option>
+                      <option value="BB">Barbados</option>
+                      <option value="BY">Belarus</option>
+                      <option value="BE">Belgium</option>
+                      <option value="BZ">Belize</option>
+                      <option value="BJ">Benin</option>
+                      <option value="BM">Bermuda</option>
+                      <option value="BT">Bhutan</option>
+                      <option value="BO">Bolivia</option>
+                      <option value="BQ">Bonaire/Sint Eustatius/Saba</option>
+                      <option value="BA">Bosnia And Herzegowina</option>
+                      <option value="BW">Botswana</option>
+                      <option value="BV">Bouvet Island</option>
+                      <option value="BR">Brazil</option>
+                      <option value="IO">British Indian Ocean Territory</option>
+                      <option value="VG">British Virgin Islands</option>
+                      <option value="BN">Brunei Darussalam</option>
+                      <option value="BG">Bulgaria</option>
+                      <option value="BF">Burkina Faso</option>
+                      <option value="BI">Burundi</option>
+                      <option value="KH">Cambodia</option>
+                      <option value="CM">Cameroon</option>
+                      <option value="CA">Canada</option>
+                      <option value="CV">Cape Verde</option>
+                      <option value="KY">Cayman Islands</option>
+                      <option value="CF">Central African Republic</option>
+                      <option value="TD">Chad</option>
+                      <option value="CL">Chile</option>
+                      <option value="CN">China</option>
+                      <option value="CX">Christmas Island</option>
+                      <option value="CC">Cocos (Keeling) Islands</option>
+                      <option value="CO">Colombia</option>
+                      <option value="KM">Comoros</option>
+                      <option value="CG">Congo</option>
+                      <option value="CK">Cook Islands</option>
+                      <option value="CR">Costa Rica</option>
+                      <option value="CI">Cote D Ivoire</option>
+                      <option value="HR">Croatia</option>
+                      <option value="CU">Cuba</option>
+                      <option value="CW">Curaçao</option>
+                      <option value="CY">Cyprus</option>
+                      <option value="CZ">Czech Republic</option>
+                      <option value="CD">Democratic Republic Of The Congo</option>
+                      <option value="DK">Denmark</option>
+                      <option value="DJ">Djibouti</option>
+                      <option value="DM">Dominica</option>
+                      <option value="DO">Dominican Republic</option>
+                      <option value="EC">Ecuador</option>
+                      <option value="EG">Egypt</option>
+                      <option value="SV">El Salvador</option>
+                      <option value="GQ">Equatorial Guinea</option>
+                      <option value="ER">Eritrea</option>
+                      <option value="EE">Estonia</option>
+                      <option value="ET">Ethiopia</option>
+                      <option value="EU">Europe (Unknown Country)</option>
+                      <option value="FK">Falkland Islands (Malvinas)</option>
+                      <option value="FO">Faroe Islands</option>
+                      <option value="FM">Federated States Of Micronesia</option>
+                      <option value="FJ">Fiji</option>
+                      <option value="FI">Finland</option>
+                      <option value="FR">France</option>
+                      <option value="GF">French Guiana</option>
+                      <option value="PF">French Polynesia</option>
+                      <option value="TF">French Southern Territories</option>
+                      <option value="GA">Gabon</option>
+                      <option value="GM">Gambia</option>
+                      <option value="GE">Georgia</option>
+                      <option value="DE">Germany</option>
+                      <option value="GH">Ghana</option>
+                      <option value="GI">Gibraltar</option>
+                      <option value="GR">Greece</option>
+                      <option value="GL">Greenland</option>
+                      <option value="GD">Grenada</option>
+                      <option value="GP">Guadeloupe</option>
+                      <option value="GU">Guam</option>
+                      <option value="GT">Guatemala</option>
+                      <option value="GG">Guernsey</option>
+                      <option value="GN">Guinea</option>
+                      <option value="GW">Guinea-Bissau</option>
+                      <option value="GY">Guyana</option>
+                      <option value="HT">Haiti</option>
+                      <option value="HM">Heard And Mc Donald Islands</option>
+                      <option value="VA">Holy See (Vatican City State)</option>
+                      <option value="HN">Honduras</option>
+                      <option value="HK">Hong Kong</option>
+                      <option value="HU">Hungary</option>
+                      <option value="IS">Iceland</option>
+                      <option value="IN">India</option>
+                      <option value="ID">Indonesia</option>
+                      <option value="IR">Iran (Islamic Republic Of)</option>
+                      <option value="IQ">Iraq</option>
+                      <option value="IE">Ireland</option>
+                      <option value="IM">Isle Of Man</option>
+                      <option value="IL">Israel</option>
+                      <option value="IT">Italy</option>
+                      <option value="JM">Jamaica</option>
+                      <option value="JP">Japan</option>
+                      <option value="JE">Jersey</option>
+                      <option value="JO">Jordan</option>
+                      <option value="KZ">Kazakhstan</option>
+                      <option value="KE">Kenya</option>
+                      <option value="KI">Kiribati</option>
+                      <option value="KW">Kuwait</option>
+                      <option value="KG">Kyrgyzstan</option>
+                      <option value="LA">Lao Peoples Democratic Republic</option>
+                      <option value="LV">Latvia</option>
+                      <option value="LB">Lebanon</option>
+                      <option value="LS">Lesotho</option>
+                      <option value="LR">Liberia</option>
+                      <option value="LY">Libyan Arab Jamahiriya</option>
+                      <option value="LI">Liechtenstein</option>
+                      <option value="LT">Lithuania</option>
+                      <option value="LU">Luxembourg</option>
+                      <option value="MO">Macau</option>
+                      <option value="MK">Macedonia</option>
+                      <option value="MG">Madagascar</option>
+                      <option value="MW">Malawi</option>
+                      <option value="MY">Malaysia</option>
+                      <option value="MV">Maldives</option>
+                      <option value="ML">Mali</option>
+                      <option value="MT">Malta</option>
+                      <option value="MH">Marshall Islands</option>
+                      <option value="MQ">Martinique</option>
+                      <option value="MR">Mauritania</option>
+                      <option value="MU">Mauritius</option>
+                      <option value="YT">Mayotte</option>
+                      <option value="MX">Mexico</option>
+                      <option value="MD">Moldova</option>
+                      <option value="MC">Monaco</option>
+                      <option value="MN">Mongolia</option>
+                      <option value="ME">Montenegro</option>
+                      <option value="MS">Montserrat</option>
+                      <option value="MA">Morocco</option>
+                      <option value="MZ">Mozambique</option>
+                      <option value="MM">Myanmar</option>
+                      <option value="NA">Namibia</option>
+                      <option value="NR">Nauru</option>
+                      <option value="NP">Nepal</option>
+                      <option value="NL">Netherlands</option>
+                      <option value="AN">Netherlands Antilles</option>
+                      <option value="NC">New Caledonia</option>
+                      <option value="NZ">New Zealand</option>
+                      <option value="NI">Nicaragua</option>
+                      <option value="NE">Niger</option>
+                      <option value="NG">Nigeria</option>
+                      <option value="NU">Niue</option>
+                      <option value="NF">Norfolk Island</option>
+                      <option value="KP">North Korea</option>
+                      <option value="MP">Northern Mariana Islands</option>
+                      <option value="NO">Norway</option>
+                      <option value="OM">Oman</option>
+                      <option value="PK">Pakistan</option>
+                      <option value="PW">Palau</option>
+                      <option value="PS">Palestinian Territories</option>
+                      <option value="PA">Panama</option>
+                      <option value="PG">Papua New Guinea</option>
+                      <option value="PY">Paraguay</option>
+                      <option value="PE">Peru</option>
+                      <option value="PH">Philippines</option>
+                      <option value="PN">Pitcairn</option>
+                      <option value="PL">Poland</option>
+                      <option value="PT">Portugal</option>
+                      <option value="PR">Puerto Rico</option>
+                      <option value="QA">Qatar</option>
+                      <option value="**">Reserved/Private</option>
+                      <option value="RE">Reunion</option>
+                      <option value="RO">Romania</option>
+                      <option value="RU">Russian Federation</option>
+                      <option value="RW">Rwanda</option>
+                      <option value="BL">Saint Barthelemy</option>
+                      <option value="KN">Saint Kitts And Nevis</option>
+                      <option value="LC">Saint Lucia</option>
+                      <option value="MF">Saint Martin</option>
+                      <option value="VC">Saint Vincent And The Grenadines</option>
+                      <option value="WS">Samoa</option>
+                      <option value="SM">San Marino</option>
+                      <option value="ST">Sao Tome And Principe</option>
+                      <option value="SA">Saudi Arabia</option>
+                      <option value="SN">Senegal</option>
+                      <option value="RS">Serbia</option>
+                      <option value="SC">Seychelles</option>
+                      <option value="SL">Sierra Leone</option>
+                      <option value="SG">Singapore</option>
+                      <option value="SX">Sint Maarten</option>
+                      <option value="SK">Slovakia (Slovak Republic)</option>
+                      <option value="SI">Slovenia</option>
+                      <option value="SB">Solomon Islands</option>
+                      <option value="SO">Somalia</option>
+                      <option value="ZA">South Africa</option>
+                      <option value="GS">South Georgia / South Sandwich Isl</option>
+                      <option value="KR">South Korea</option>
+                      <option value="SS">South Sudan</option>
+                      <option value="ES">Spain</option>
+                      <option value="LK">Sri Lanka</option>
+                      <option value="SH">St. Helena</option>
+                      <option value="PM">St. Pierre And Miquelon</option>
+                      <option value="SD">Sudan</option>
+                      <option value="SR">Suriname</option>
+                      <option value="SJ">Svalbard And Jan Mayen Islands</option>
+                      <option value="SZ">Swaziland</option>
+                      <option value="SE">Sweden</option>
+                      <option value="CH">Switzerland</option>
+                      <option value="SY">Syrian Arab Republic</option>
+                      <option value="TW">Taiwan</option>
+                      <option value="TJ">Tajikistan</option>
+                      <option value="TZ">Tanzania</option>
+                      <option value="TH">Thailand</option>
+                      <option value="TL">Timor-Leste</option>
+                      <option value="TG">Togo</option>
+                      <option value="TK">Tokelau</option>
+                      <option value="TO">Tonga</option>
+                      <option value="TT">Trinidad And Tobago</option>
+                      <option value="TN">Tunisia</option>
+                      <option value="TR">Turkey</option>
+                      <option value="TM">Turkmenistan</option>
+                      <option value="TC">Turks And Caicos Islands</option>
+                      <option value="TV">Tuvalu</option>
+                      <option value="UG">Uganda</option>
+                      <option value="UA">Ukraine</option>
+                      <option value="AE">United Arab Emirates</option>
+                      <option value="UK">United Kingdom</option>
+                      <option value="US" selected="selected">United States</option>
+                      <option value="?">Unknown</option>
+                      <option value="UY">Uruguay</option>
+                      <option value="UM">US Minor Outlying Islands</option>
+                      <option value="VI">US Virgin Islands</option>
+                      <option value="UZ">Uzbekistan</option>
+                      <option value="VU">Vanuatu</option>
+                      <option value="VE">Venezuela</option>
+                      <option value="VN">Viet Nam</option>
+                      <option value="WF">Wallis And Futuna Islands</option>
+                      <option value="EH">Western Sahara</option>
+                      <option value="YE">Yemen</option>
+                      <option value="ZM">Zambia</option>
+                      <option value="ZW">Zimbabwe</option>
+                      <option value="other">Not Listed</option>
+                    </select>
+                  </div>
+                </div>
+                <div id="AccountCreateCountryTextContainer" class="js-form-message mb-4 d-none">
+                  <label for="AccountCreateCountryText" class="h6 small d-block text-uppercase">
+                    Country (other): *
+                  </label>
+                  <div class="js-focus-state input-group u-form">
+                    <input name="account[country]"
+                           type="text"
+                           id="AccountCreateCountryText"
+                           class="form-control u-form__input"
+                           value=""
+                           required
+                           disabled="disabled"
+                           data-msg="Please enter a valid country."
+                           data-error-class="u-has-error"
+                           data-success-class="u-has-success">
+                  </div>
+                </div>
+                <div id="AccountCreateRegionContainer" class="js-form-message mb-4 d-none">
+                  <label for="AccountCreateRegion" class="h6 small d-block text-uppercase">
+                    Region: *
+                  </label>
+                  <div class="js-focus-state input-group u-form">
+                    <input name="account[region]"
+                           type="text"
+                           class="form-control u-form__input"
+                           value=""
+                           required
+                           id="AccountCreateRegion"
+                           data-msg="Please enter a valid region"
+                           data-error-class="u-has-error"
+                           data-success-class="u-has-success">
+                  </div>
+                </div>
+                <div id="AccountCreateStateContainer" class="js-form-message mb-4 d-none">
+                  <label for="AccountCreateState" class="h6 small d-block text-uppercase">
+                    State: *
+                  </label>
+                  <div class="js-focus-state input-group u-form">
+                    <select name="account[region]"
+                            id="AccountCreateState"
+                            disabled="disabled"
+                            class="form-control u-form__input"
+                            data-msg="Please enter a valid state"
+                            data-error-class="u-has-error"
+                            data-success-class="u-has-success">
+                      <option value="AL">Alabama</option>
+                      <option value="AK">Alaska</option>
+                      <option value="AOL">AOL</option>
+                      <option value="AZ">Arizona</option>
+                      <option value="AR">Arkansas</option>
+                      <option value="CA">California</option>
+                      <option value="CO">Colorado</option>
+                      <option value="CT">Connecticut</option>
+                      <option value="DE">Delaware</option>
+                      <option value="DC">District Of Columbia</option>
+                      <option value="FL">Florida</option>
+                      <option value="GA">Georgia</option>
+                      <option value="HI">Hawaii</option>
+                      <option value="ID">Idaho</option>
+                      <option value="IL">Illinois</option>
+                      <option value="IN">Indiana</option>
+                      <option value="IA">Iowa</option>
+                      <option value="KS">Kansas</option>
+                      <option value="KY">Kentucky</option>
+                      <option value="LA">Louisiana</option>
+                      <option value="ME">Maine</option>
+                      <option value="MD">Maryland</option>
+                      <option value="MA">Massachusetts</option>
+                      <option value="MI">Michigan</option>
+                      <option value="MN">Minnesota</option>
+                      <option value="MS">Mississippi</option>
+                      <option value="MO">Missouri</option>
+                      <option value="MT">Montana</option>
+                      <option value="NE">Nebraska</option>
+                      <option value="NV">Nevada</option>
+                      <option value="NH">New Hampshire</option>
+                      <option value="NJ">New Jersey</option>
+                      <option value="NM">New Mexico</option>
+                      <option value="NY">New York</option>
+                      <option value="NC">North Carolina</option>
+                      <option value="ND">North Dakota</option>
+                      <option value="OH">Ohio</option>
+                      <option value="OK">Oklahoma</option>
+                      <option value="OR">Oregon</option>
+                      <option value="PA">Pennsylvania</option>
+                      <option value="RI">Rhode Island</option>
+                      <option value="SC">South Carolina</option>
+                      <option value="SD">South Dakota</option>
+                      <option value="TN">Tennessee</option>
+                      <option value="TX">Texas</option>
+                      <option value="?">United States</option>
+                      <option value="UT">Utah</option>
+                      <option value="VT">Vermont</option>
+                      <option value="VA">Virginia</option>
+                      <option value="WA">Washington</option>
+                      <option value="WEBTV">Webtv</option>
+                      <option value="WV">West Virginia</option>
+                      <option value="WI">Wisconsin</option>
+                      <option value="WY">Wyoming</option>
+                    </select>
+                  </div>
+                </div>
+                <div id="AccountCreateProvinceContainer" class="js-form-message mb-4">
+                  <label for="AccountCreateProvince" class="h6 small text-uppercase">
+                    Province / Territory: *
+                  </label>
+                  <div class="js-focus-state input-group u-form">
+                    <select name="account[region]"
+                            id="AccountCreateProvince"
+                            class="form-control u-form__input"
+                            data-msg="Please enter a valid province / territory"
+                            data-error-class="u-has-error"
+                            data-success-class="u-has-success">
+                      <option value="AB">Alberta</option>
+                      <option value="AOL">AOL</option>
+                      <option value="BC">British Columbia</option>
+                      <option value="?">Canada</option>
+                      <option value="MB">Manitoba</option>
+                      <option value="NB">New Brunswick</option>
+                      <option value="NL">Newfoundland And Labrador</option>
+                      <option value="NT">Northwest Territories</option>
+                      <option value="NS">Nova Scotia</option>
+                      <option value="NU">Nunavut</option>
+                      <option value="ON">Ontario</option>
+                      <option value="PE">Prince Edward Island</option>
+                      <option value="QC">Quebec</option>
+                      <option value="SK">Saskatchewan</option>
+                      <option value="YT">Yukon Territory</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="js-form-message mb-4">
+                  <label for="AffiliateZipCode" class="h6 small d-block text-uppercase">
+                    Zipcode: *
+                  </label>
+                  <div class="js-focus-state input-group u-form">
+                    <input name="account[zipcode]"
+                           type="text"
+                           class="form-control u-form__input"
+                           value=""
+                           required
+                           id="AffiliateZipCode"
+                           data-msg="Please enter a valid zipcode."
+                           data-error-class="u-has-error"
+                           data-success-class="u-has-success">
+                  </div>
+                </div>
+                <div class="js-form-message mb-4">
+                  <label for="AffiliatePhone" class="h6 small d-block text-uppercase">
+                    Phone: *
+                  </label>
+                  <div class="js-focus-state input-group u-form">
+                    <input name="account[phone]"
+                           type="text"
+                           class="form-control u-form__input"
+                           value=""
+                           required
+                           id="AffiliatePhone"
+                           data-msg="Please enter a valid phone."
+                           data-error-class="u-has-error"
+                           data-success-class="u-has-success">
+                  </div>
+                </div>
+              </div>
+            </form>
+
+            <form class="js-validate" id="affiliateUserForm">
+              <div class="form-group custom-form-group mb-5">
+                <h3 class="h4 text-primary mb-4">User Details</h3>
+                <div class="js-form-message mb-4">
+                  <label for="AffiliateUserEmail" class="h6 small d-block text-uppercase">
+                    E-mail Address: *
+                  </label>
+                  <div class="js-focus-state input-group u-form">
+                    <input name="user[email]"
+                           type="email"
+                           value=""
+                           required
+                           id="AffiliateUserEmail"
+                           class="form-control u-form__input"
+                           data-msg="Please enter a valid e-mail address."
+                           data-error-class="u-has-error"
+                           data-success-class="u-has-success">
+                  </div>
+                </div>
+                <div class="js-form-message mb-4">
+                  <label for="AffiliateUserPassword" class="h6 small d-block text-uppercase">
+                    Password: *
+                  </label>
+                  <div class="js-focus-state input-group u-form">
+                    <input type="password"
+                           name="user[password]"
+                           value=""
+                           required
+                           id="AffiliateUserPassword"
+                           class="form-control u-form__input"
+                           data-msg="Please enter a valid password"
+                           data-error-class="u-has-error"
+                           data-success-class="u-has-success">
+                  </div>
+                  <div id="PasswordError" class="small text-danger d-none">
+                    Please choose a strong password (e.g.: A combination of upper case letters, lower case letters,
+                    numbers, and/or special characters)
+                  </div>
+                  <div class="small text-muted" id="passwordNotification">
+                    Password must be between 6 and 16 characters
+                  </div>
+                </div>
+                <div class="js-form-message mb-4">
+                  <label for="AffiliateUserPasswordConfirmation" class="h6 small d-block text-uppercase">
+                    Confirm Password: *
+                  </label>
+                  <div class="js-focus-state input-group u-form">
+                    <input type="password"
+                           name="user[password_confirmation]"
+                           value=""
+                           required
+                           id="AffiliateUserPasswordConfirmation"
+                           class="form-control u-form__input"
+                           data-msg="Please enter a valid password."
+                           data-error-class="u-has-error"
+                           data-success-class="u-has-success">
+                  </div>
+                  <span id="PasswordConfirmationError" class="small text-danger d-none">
+                  Password confirmation doesn't match
+                </span>
+                </div>
+                <div class="js-form-message mb-4">
+                  <label for="AffiliateUserFirstName" class="h6 small d-block text-uppercase">
+                    First Name: *
+                  </label>
+                  <div class="js-focus-state input-group u-form">
+                    <input name="user[first_name]"
+                           type="text"
+                           value=""
+                           required
+                           id="AffiliateUserFirstName"
+                           class="form-control u-form__input"
+                           data-msg="Please enter a valid first name."
+                           data-error-class="u-has-error"
+                           data-success-class="u-has-success">
+                  </div>
+                </div>
+                <div class="js-form-message mb-4">
+                  <label for="AffiliateUserLastName" class="h6 small d-block text-uppercase">
+                    Last Name: *
+                  </label>
+                  <div class="js-focus-state input-group u-form">
+                    <input name="user[last_name]"
+                           type="text"
+                           value=""
+                           required
+                           id="AffiliateUserLastName"
+                           class="form-control u-form__input"
+                           data-msg="Please enter a valid last name."
+                           data-error-class="u-has-error"
+                           data-success-class="u-has-success">
+                  </div>
+                </div>
+                <div class="js-form-message mb-4">
+                  <label for="AffiliateUserTitle" class="h6 small d-block text-uppercase">
+                    Title:
+                  </label>
+                  <div class="js-focus-state input-group u-form">
+                    <input name="user[title]"
+                           type="text"
+                           value=""
+                           id="AffiliateUserTitle"
+                           class="form-control u-form__input"
+                           data-msg="Please enter a valid title."
+                           data-error-class="u-has-error"
+                           data-success-class="u-has-success">
+                  </div>
+                </div>
+              </div>
+            </form>
+
+            <form class="js-validate" id="signUpAnswerForm">
+              <div class="form-group custom-form-group">
+                <h3 class="h4 text-primary mb-4">Additional Questions</h3>
+                <div class="js-form-message mb-4">
+                  <label for="AdditionalURL" class="h6 small d-block text-uppercase">
+                    What is your website(s) URL?:&nbsp;*
+                  </label>
+                  <textarea name="data[answer][2]"
+                            id="AdditionalURL"
+                            required
+                            class="form-control u-form__input"
+                            data-msg="Please enter a valid website(s) URL."
+                            data-error-class="u-has-error"
+                            data-success-class="u-has-success"></textarea>
+                </div>
+                <div class="js-form-message mb-4">
+                  <label for="AdditionalVisitorsCount" class="h6 small d-block text-uppercase">
+                    Monthly Unique Visitors:
+                  </label>
+                  <textarea name="data[answer][8]"
+                            id="AdditionalVisitorsCount"
+                            class="form-control u-form__input"
+                            data-msg="Please enter a valid monthly unique visitors."
+                            data-error-class="u-has-error"
+                            data-success-class="u-has-success"></textarea>
+                </div>
+                <div class="js-form-message mb-4">
+                  <label for="AdditionalSubscribers" class="h6 small d-block text-uppercase">
+                    Newsletter Subscribers:
+                  </label>
+                  <textarea name="data[answer][10]"
+                            id="AdditionalSubscribers"
+                            class="form-control u-form__input"
+                            data-msg="Please enter a valid newsletter subscribers number."
+                            data-error-class="u-has-error"
+                            data-success-class="u-has-success"></textarea>
+                </div>
+                <div class="js-form-message mb-4">
+                  <label for="AdditionalFollowers" class="h6 small d-block text-uppercase">
+                    Social Followers:
+                  </label>
+                  <textarea name="data[answer][12]"
+                            id="AdditionalFollowers"
+                            class="form-control u-form__input"
+                            data-msg="Please enter a valid social followers"
+                            data-error-class="u-has-error"
+                            data-success-class="u-has-success"></textarea>
+                </div>
+              </div>
+            </form>
+
+            <form class="js-validate" id="agreementForm">
+              <div class="form-group form-check d-flex align-items-center">
+                <div class="js-form-message mb-2">
+                  <input type="checkbox"
+                         required
+                         class="form-check-input mt-0"
+                         name="terms_agreement"
+                         id="AffiliateUserTermsAgreement"
+                         data-msg="Please check this box if you want to proceed"
+                         data-error-class="u-has-error"
+                         data-success-class="u-has-success"
+                  >
+                  <label class="small d-block text-uppercase mb-0" for="AffiliateUserTermsAgreement">
+                    I agree to the
+                    <a href="https://my.adbloom.co/terms" target="_blank" rel="noopener noreferrer" class="blue-link">
+                      Terms and Conditions
+                    </a>
+                  </label>
+                </div>
+              </div>
+              <div class="form-group form-check d-flex align-items-baseline">
+                <div class="js-form-message mb-2">
+                  <input type="checkbox"
+                         required
+                         class="form-check-input mt-0"
+                         name="terms_third_party_agreement"
+                         id="AffiliateUserTermsThirdPartyAgreement"
+                         data-msg="Please check this box if you want to proceed"
+                         data-error-class="u-has-error"
+                         data-success-class="u-has-success"
+                  >
+                  <label class="small d-block text-uppercase mb-0" for="AffiliateUserTermsThirdPartyAgreement">
+                    I hereby consent and allow the use of my and/or my company's information, including sharing with a third
+                    party, to assess, detect, prevent or otherwise enable detection and prevention of malicious, invalid or
+                    unlawful activity and/or general fraud prevention.
+                  </label>
+                </div>
+              </div>
+            </form>
+
+
+
+
+            <!-- Button -->
+            <div class="row align-items-center mb-5">
+              <div class="col-6">
+                <span class="small text-muted">Are you an existing partner?</span>
+                <a class="small" href="@@webRoot/login">Sign in</a>
+              </div>
+
+              <div class="col-6 text-right">
+                <button type="button" id="signUpButton" class="btn btn-primary u-btn-primary transition-3d-hover">
+                  Sign Up
+                </button>
+              </div>
+            </div>
+            <!-- End Button -->
+          </div>
+          <!-- End Form -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Form -->
+</main>
+<!-- ========== END MAIN ========== -->
+
+<!-- Scripts-->
+@@include('app/partials/scripts.html')
+
+<!-- build:js @@webRoot/scripts/sign-up.js -->
+<script src="/scripts/account-geography.js"></script>
+<script src="/scripts/password-strength.js"></script>
+<script src="/scripts/signup-1.js"></script>
+<!-- endbuild -->
+
+<!-- JS Plugins Init. -->
+<script>
+  $(document).on('ready', function () {
+    // initialization of forms
+    $.HSCore.helpers.HSFocusState.init();
+    // initialization of form validation
+    $.HSCore.components.HSValidation.init('.js-validate');
+  });
+</script>
+</body>
+</html>
