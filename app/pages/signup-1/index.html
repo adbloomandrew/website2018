@@ -598,6 +598,7 @@
                            data-success-class="u-has-success">
                   </div>
                 </div>
+                <input type="hidden" class="d-none" name="account[referral_id]" value="1046">
               </div>
             </form>
 
@@ -729,10 +730,11 @@
                 </div>
                 <div class="js-form-message mb-4">
                   <label for="AdditionalVisitorsCount" class="h6 small d-block text-uppercase">
-                    Monthly Unique Visitors:
+                    Monthly Unique Visitors *:
                   </label>
                   <textarea name="data[answer][8]"
                             id="AdditionalVisitorsCount"
+                            required
                             class="form-control u-form__input"
                             data-msg="Please enter a valid monthly unique visitors."
                             data-error-class="u-has-error"
@@ -740,10 +742,11 @@
                 </div>
                 <div class="js-form-message mb-4">
                   <label for="AdditionalSubscribers" class="h6 small d-block text-uppercase">
-                    Newsletter Subscribers:
+                    Newsletter Subscribers *:
                   </label>
                   <textarea name="data[answer][10]"
                             id="AdditionalSubscribers"
+                            required
                             class="form-control u-form__input"
                             data-msg="Please enter a valid newsletter subscribers number."
                             data-error-class="u-has-error"
@@ -751,10 +754,11 @@
                 </div>
                 <div class="js-form-message mb-4">
                   <label for="AdditionalFollowers" class="h6 small d-block text-uppercase">
-                    Social Followers:
+                    Social Followers *:
                   </label>
                   <textarea name="data[answer][12]"
                             id="AdditionalFollowers"
+                            required
                             class="form-control u-form__input"
                             data-msg="Please enter a valid social followers"
                             data-error-class="u-has-error"
@@ -809,7 +813,7 @@
             <!-- Button -->
             <div class="row align-items-center mb-5">
               <div class="col-6">
-                <span class="small text-muted">Are you an existing partner?</span>
+                <span class="small text-muted">Are you an existing account?</span>
                 <a class="small" href="@@webRoot/login">Sign in</a>
               </div>
 
@@ -833,7 +837,7 @@
 <!-- Scripts-->
 @@include('app/partials/scripts.html')
 
-<!-- build:js @@webRoot/scripts/sign-up.js -->
+<!-- build:js @@webRoot/scripts/sign-up-1.js -->
 <script src="/scripts/account-geography.js"></script>
 <script src="/scripts/password-strength.js"></script>
 <script src="/scripts/signup-1.js"></script>
