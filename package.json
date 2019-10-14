@@ -34,7 +34,7 @@
     "install": "^0.10.4",
     "main-bower-files": "^2.13.1",
     "npm": "^5.7.1",
-    "serve": "^6.5.3",
+    "serve": "^11.2.0",
     "wiredep": "^4.0.0"
   },
   "dependencies": {
