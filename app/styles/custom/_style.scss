@@ -9,13 +9,40 @@
 @import "components/about-hero-section";
 @import "components/about-team-section";
 
+.background-white {
+  background-color: $g-white;
+}
+
 .u-gradient-half-primary-v4 {
-  background-image: linear-gradient(270deg, #3c285f 0%, #2b1c44 100%);
+  //background-image: linear-gradient(270deg, #123263 0%, #3c285f 100%);
+  background-color: #123263;
+}
+
+.u-gradient-overlay-half-primary-v4 {
+  &:before {
+    //background-image: linear-gradient(270deg, transparentize(#123263, 0.2) 0%, transparentize(#3c285f, 0.3) 100%);
+    background-color: transparentize(#123263, 0.2);
+  }
 }
 
 .u-icon-primary--air {
   background-color: transparentize($primary, 0.9);
   color: $primary;
+}
+
+.u-icon-green--air {
+  background-color: $g-green;
+  color: $g-white;
+}
+
+.u-icon-orange--air {
+  background-color: $g-orange;
+  color: $g-white;
+}
+
+.u-icon-blue-light--air {
+  background-color: $g-blue-light;
+  color: $g-white;
 }
 
 .u-slick__arrow,
@@ -70,7 +97,9 @@
 }
 
 .min-height-3-lines {
-  min-height: 2.5rem;
+  @include media-breakpoint-down(sm) {
+    min-height: 9rem;
+  }
 }
 
 
@@ -82,5 +111,118 @@
   @include media-breakpoint-down(sm) {
     width: 100%;
     max-width: 200px;
+  }
+}
+
+.text-white-lg {
+  @include media-breakpoint-up(lg) {
+    color: $g-white !important;
+  }
+}
+
+.text-green {
+  color: $g-green;
+}
+
+.text-orange {
+  color: $g-orange;
+}
+
+.text-blue-light {
+  color: $g-blue-light;
+}
+
+.max-width-1 {
+  max-width: 24rem;
+  width: 100%;
+}
+
+.partner-logos-container {
+  @include flex(row, center, center, wrap);
+
+  .logos-wrapper {
+    @include media-breakpoint-up(md) {
+      flex: 0 0 50%;
+
+      &:nth-child(odd) {
+        @include flex(row, center, flex-end);
+      }
+      &:nth-child(even) {
+        @include flex(row, center, flex-start);
+      }
+    }
+    @include media-breakpoint-down(sm) {
+      flex: 0 0 100%;
+    }
+  }
+
+  .partners-img {
+    @include img-fluid;
+    flex-shrink: 0;
+  }
+}
+
+.header-offset {
+  padding-top: 150px;
+}
+
+.blue-link {
+  @include plain-hover-focus {
+    color: $g-blue-darker;
+  }
+}
+
+.error-messages-list {
+  @include list-unstyled;
+  margin-bottom: 0;
+  margin-top: 20px;
+
+  li {
+    margin-bottom: 20px;
+  }
+}
+
+.lds-ring-loader {
+  @include fixed(top 0 left 0);
+  @include size(100%);
+  background-color: transparentize($black, 0.4);
+  z-index: 10;
+
+  .lds-ring {
+    @include absolute(top 50% left 50%);
+    @include size(64px);
+    transform: translate(-50%, -50%);
+    display: inline-block;
+
+    div {
+      box-sizing: border-box;
+      display: block;
+      position: absolute;
+      width: 51px;
+      height: 51px;
+      margin: 6px;
+      border: 6px solid #fff;
+      border-radius: 50%;
+      animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+      border-color: #fff transparent transparent transparent;
+    }
+    div:nth-child(1) {
+      animation-delay: -0.45s;
+    }
+    div:nth-child(2) {
+      animation-delay: -0.3s;
+    }
+    div:nth-child(3) {
+      animation-delay: -0.15s;
+    }
+
+    @keyframes lds-ring {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
   }
 }

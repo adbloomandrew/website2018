@@ -2,13 +2,10 @@
 
 // Smooth scroll to anchor
 $(document).ready(function() {
+  smoothScrollTo(window.location.hash);
   $('.js-smooth-scroll').on('click', function(e) {
     smoothScrollTo(this.hash, e);
   });
-});
-
-$(window).on('load',function() {
-  smoothScrollTo(window.location.hash);
 });
 
 function smoothScrollTo(hash, e) {

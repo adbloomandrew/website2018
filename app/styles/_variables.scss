@@ -92,9 +92,13 @@ $g-google:                                                  #d14130 !default;
 $g-twitter:                                                 #1da1f2 !default;
 $g-instagram:                                               #3f729b !default;
 $g-github:           																				#24292e !default;
+$blue-dark:                                                 #123263;
+$g-green:                                                   #338823;
+$g-orange:                                                  #f08b00;
+$g-blue-light:                                              #1064ac;
 
 // Theme Colors
-$g-primary:                                                 $g-blue !default;
+$g-primary:                                                 $blue-dark !default;
 $g-primary-darker:                                          $g-blue-darker !default;
 $g-primary-lighter:          																$g-blue-lighter !default;
 $g-secondary:                                               $g-light-blue-200 !default;

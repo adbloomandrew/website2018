@@ -2,7 +2,17 @@
 <html lang="en">
 <head>
   <!-- Title -->
-  <title>Case Studies | adbloom</title>
+  <title>Case Studies | Adbloom</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-97648764-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-97648764-1');
+  </script>
 
   <!-- Required Meta Tags Always Come First -->
   <meta charset="utf-8">
@@ -709,7 +719,6 @@
 
   <!-- Scripts-->
   @@include('app/partials/scripts.html')
-  @@include('app/partials/learn-more-modal.html')
 
   <!-- JS Plugins Init. -->
   <script>
