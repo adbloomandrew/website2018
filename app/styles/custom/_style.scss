@@ -234,3 +234,7 @@
     }
   }
 }
+
+.u-content-position-top {
+  @include absolute(top 0);
+}
