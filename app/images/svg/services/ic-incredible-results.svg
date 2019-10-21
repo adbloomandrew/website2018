@@ -1,1 +1,100 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="141" height="141"><defs><path id="b" d="M223.99 740.5a64.5 64.5 0 1 1 129.01 0 64.5 64.5 0 0 1-129.01 0z"/><path id="d" d="M235.83 742.1a25.38 25.38 0 0 1-11.83-7.7 67.23 67.23 0 0 0 67.1 70.8c27.75 0 46.6-16.84 56.86-40.87-14.91-.25-24.73-1.83-38.48-8.25-14.15-6.69-31.97-21.1-43.53-18.07-10.83 4.17-21.14 6.74-30.13 4.08z"/><path id="f" d="M224.4 733.42c-.06 1.2-.41 5.87-.41 7.08 0 36.3 26.64 64.5 64.5 64.5 11.8 0 23.06-3.68 32.75-8.93-17.12-1.16-33.2-5.22-48.32-15.4-13.31-8.98-23.29-23.43-24.5-38.98-10.3 1.83-16.32.29-24.01-8.27z"/><path id="g" d="M300.72 757.37v-24.81h26.46v24.81z"/><path id="h" d="M300.92 736.03h26.17"/><path id="i" d="M301.7 734.9v-1.35h1.3v1.35z"/><path id="j" d="M303.32 734.9v-1.35h1.3v1.35z"/><path id="k" d="M304.94 734.9v-1.35h1.3v1.35z"/><path id="l" d="M248.78 754.39v-24.81h26.46v24.81z"/><path id="m" d="M248.97 733.05h26.17"/><path id="n" d="M249.76 731.92v-1.35h1.3v1.35z"/><path id="o" d="M251.38 731.92v-1.35h1.3v1.35z"/><path id="p" d="M253 731.92v-1.35h1.3v1.35z"/><path id="q" d="M267.4 701.81c0-1.1.9-2 2-2h36.18a2 2 0 0 1 2 2v38.69H267.4z"/><path id="r" d="M267.4 701.81c0-1.1.9-2 2-2h36.18a2 2 0 0 1 2 2v6.42H267.4z"/><path id="s" d="M270.34 705.16v-2.37h2.28v2.37z"/><path id="t" d="M274.26 705.16v-2.37h2.28v2.37z"/><path id="u" d="M278.18 705.16v-2.37h2.28v2.37z"/><path id="v" d="M267.4 708.23v13.33h4.16v-4.21h8.31v4.2h3.47v-4.2h8.3v4.2h3.47v-4.2h8.32v4.2h4.15v-13.32z"/><path id="w" d="M279.18 730.67h-6.93a.7.7 0 0 1-.69-.7c0-.39.31-.7.7-.7h6.92c.38 0 .7.31.7.7a.7.7 0 0 1-.7.7z"/><path id="x" d="M279.18 733.48h-6.93a.7.7 0 0 1-.69-.7c0-.39.31-.7.7-.7h6.92c.38 0 .7.31.7.7a.7.7 0 0 1-.7.7z"/><path id="y" d="M279.18 736.28h-6.93a.7.7 0 0 1-.69-.7c0-.39.31-.7.7-.7h6.92c.38 0 .7.31.7.7a.7.7 0 0 1-.7.7z"/><path id="z" d="M290.95 730.67h-6.93a.7.7 0 0 1-.69-.7c0-.39.31-.7.7-.7h6.92c.38 0 .7.31.7.7a.7.7 0 0 1-.7.7z"/><path id="A" d="M290.95 733.48h-6.93a.7.7 0 0 1-.69-.7c0-.39.31-.7.7-.7h6.92c.38 0 .7.31.7.7a.7.7 0 0 1-.7.7z"/><path id="B" d="M290.95 736.28h-6.93a.7.7 0 0 1-.69-.7c0-.39.31-.7.7-.7h6.92c.38 0 .7.31.7.7a.7.7 0 0 1-.7.7z"/><path id="C" d="M302.73 730.67h-6.93a.7.7 0 0 1-.69-.7c0-.39.31-.7.7-.7h6.92c.38 0 .7.31.7.7a.7.7 0 0 1-.7.7z"/><path id="D" d="M302.73 733.48h-6.93a.7.7 0 0 1-.69-.7c0-.39.31-.7.7-.7h6.92c.38 0 .7.31.7.7a.7.7 0 0 1-.7.7z"/><path id="E" d="M302.73 736.28h-6.93a.7.7 0 0 1-.69-.7c0-.39.31-.7.7-.7h6.92c.38 0 .7.31.7.7a.7.7 0 0 1-.7.7z"/><path id="F" d="M271.56 725.77v-8.42h8.31v8.42z"/><path id="G" d="M295.11 725.77v-8.42h8.31v8.42z"/><path id="H" d="M283.33 725.77v-8.42h8.31v8.42z"/><path id="I" d="M298.44 751.05v-2.8c0-1.54-1.22-2.79-2.74-2.79h-16.4a2.76 2.76 0 0 0-2.74 2.8v2.79z"/><path id="J" d="M317.6 760.82h-20.53v5.59h23.26v-2.8c0-1.54-1.23-2.79-2.74-2.79z"/><path id="K" d="M277.92 756.63H257.4a2.76 2.76 0 0 0-2.74 2.8v2.79h23.26z"/><path id="L" d="M298.44 765.01v-15.36h-21.9v11.17h-21.88v22.35h65.67v-18.16z"/><path id="M" d="M288.86 763.62h-2.25v-7.23l-2.22.65v-1.72l4.26-1.48h.21z"/><path id="N" d="M307.54 773.17h1.03c.81 0 1.22-.4 1.22-1.2 0-.32-.1-.58-.29-.77-.2-.2-.47-.3-.82-.3-.29 0-.54.08-.75.25a.78.78 0 0 0-.33.64h-2.18c0-.5.15-.95.42-1.34.28-.4.66-.7 1.15-.92a3.9 3.9 0 0 1 1.61-.33c1.05 0 1.87.24 2.47.73a2.41 2.41 0 0 1 .53 3.15c-.25.36-.6.65-1.08.88a2.23 2.23 0 0 1 1.6 2.21c0 .85-.32 1.54-.97 2.04a4 4 0 0 1-2.55.77c-.61 0-1.18-.12-1.71-.36a2.73 2.73 0 0 1-1.2-.99c-.28-.42-.41-.9-.41-1.43h2.2c0 .3.1.55.34.76.23.21.52.32.86.32.38 0 .69-.1.92-.32.23-.22.34-.5.34-.83 0-.48-.12-.82-.35-1.02a1.5 1.5 0 0 0-.99-.3h-1.05v-1.64z"/><path id="O" d="M269.71 774.79h-6.64v-1.46l3.05-3.26c.76-.86 1.14-1.56 1.14-2.07 0-.41-.1-.73-.27-.94-.18-.22-.44-.33-.78-.33s-.6.15-.82.44c-.2.28-.3.64-.3 1.08h-2.22a3.18 3.18 0 0 1 1.66-2.82 3.6 3.6 0 0 1 1.73-.42c1.03 0 1.82.24 2.38.72.55.48.84 1.17.84 2.07 0 .38-.07.75-.21 1.12-.15.35-.36.73-.66 1.13-.29.39-.76.92-1.42 1.58l-1.23 1.44h3.75z"/><linearGradient id="a" x1="353" x2="223.99" y1="740.5" y2="740.5" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#3c285f"/><stop offset="1" stop-color="#2b1c44"/></linearGradient><linearGradient id="c" x1="285.94" x2="285.94" y1="805.21" y2="734.41" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#3c285f"/><stop offset="1" stop-color="#2b1c44"/></linearGradient><linearGradient id="e" x1="223.99" x2="321.24" y1="769.21" y2="769.21" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#4d3675"/><stop offset="1" stop-color="#34136a"/></linearGradient></defs><use fill="url(#a)" xlink:href="#b" transform="translate(-218 -674)"/><use fill="url(#c)" xlink:href="#d" transform="translate(-218 -674)"/><use fill="url(#e)" xlink:href="#f" transform="translate(-218 -674)"/><g transform="translate(-218 -674)"><use fill="#59447f" xlink:href="#g"/><use fill="#fff" fill-opacity="0" stroke="#342252" stroke-linecap="square" stroke-miterlimit="50" stroke-width=".3" xlink:href="#h"/><use fill="#fff" xlink:href="#i"/><use fill="#fff" xlink:href="#j"/><use fill="#fff" xlink:href="#k"/><use fill="#59447f" xlink:href="#l"/><use fill="#fff" fill-opacity="0" stroke="#342252" stroke-linecap="square" stroke-miterlimit="50" stroke-width=".3" xlink:href="#m"/><use fill="#fff" xlink:href="#n"/><use fill="#fff" xlink:href="#o"/><use fill="#fff" xlink:href="#p"/><use fill="#ecf0f1" xlink:href="#q"/><use fill="#9c6ce9" xlink:href="#r"/><use fill="#ed7161" xlink:href="#s"/><use fill="#f0c419" xlink:href="#t"/><use fill="#4fba6f" xlink:href="#u"/><use fill="#bf98ff" xlink:href="#v"/><use fill="#5c6bc0" xlink:href="#w"/><use fill="#5c6bc0" xlink:href="#x"/><use fill="#5c6bc0" xlink:href="#y"/><use fill="#5c6bc0" xlink:href="#z"/><use fill="#5c6bc0" xlink:href="#A"/><use fill="#5c6bc0" xlink:href="#B"/><use fill="#5c6bc0" xlink:href="#C"/><use fill="#5c6bc0" xlink:href="#D"/><use fill="#5c6bc0" xlink:href="#E"/><use fill="#fbc02d" xlink:href="#F"/><use fill="#fbc02d" xlink:href="#G"/><use fill="#fbc02d" xlink:href="#H"/><use fill="#bf98ff" xlink:href="#I"/><use fill="#bf98ff" xlink:href="#J"/><use fill="#bf98ff" xlink:href="#K"/><use fill="#5c6bc0" xlink:href="#L"/><use fill="#fff" xlink:href="#M"/><use fill="#fff" xlink:href="#N"/><use fill="#fff" xlink:href="#O"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="141" height="141">
+  <defs>
+    <path id="b" d="M223.99 740.5a64.5 64.5 0 1 1 129.01 0 64.5 64.5 0 0 1-129.01 0z"/>
+    <path id="d"
+          d="M235.83 742.1a25.38 25.38 0 0 1-11.83-7.7 67.23 67.23 0 0 0 67.1 70.8c27.75 0 46.6-16.84 56.86-40.87-14.91-.25-24.73-1.83-38.48-8.25-14.15-6.69-31.97-21.1-43.53-18.07-10.83 4.17-21.14 6.74-30.13 4.08z"/>
+    <path id="f"
+          d="M224.4 733.42c-.06 1.2-.41 5.87-.41 7.08 0 36.3 26.64 64.5 64.5 64.5 11.8 0 23.06-3.68 32.75-8.93-17.12-1.16-33.2-5.22-48.32-15.4-13.31-8.98-23.29-23.43-24.5-38.98-10.3 1.83-16.32.29-24.01-8.27z"/>
+    <path id="g" d="M300.72 757.37v-24.81h26.46v24.81z"/>
+    <path id="h" d="M300.92 736.03h26.17"/>
+    <path id="i" d="M301.7 734.9v-1.35h1.3v1.35z"/>
+    <path id="j" d="M303.32 734.9v-1.35h1.3v1.35z"/>
+    <path id="k" d="M304.94 734.9v-1.35h1.3v1.35z"/>
+    <path id="l" d="M248.78 754.39v-24.81h26.46v24.81z"/>
+    <path id="m" d="M248.97 733.05h26.17"/>
+    <path id="n" d="M249.76 731.92v-1.35h1.3v1.35z"/>
+    <path id="o" d="M251.38 731.92v-1.35h1.3v1.35z"/>
+    <path id="p" d="M253 731.92v-1.35h1.3v1.35z"/>
+    <path id="q" d="M267.4 701.81c0-1.1.9-2 2-2h36.18a2 2 0 0 1 2 2v38.69H267.4z"/>
+    <path id="r" d="M267.4 701.81c0-1.1.9-2 2-2h36.18a2 2 0 0 1 2 2v6.42H267.4z"/>
+    <path id="s" d="M270.34 705.16v-2.37h2.28v2.37z"/>
+    <path id="t" d="M274.26 705.16v-2.37h2.28v2.37z"/>
+    <path id="u" d="M278.18 705.16v-2.37h2.28v2.37z"/>
+    <path id="v" d="M267.4 708.23v13.33h4.16v-4.21h8.31v4.2h3.47v-4.2h8.3v4.2h3.47v-4.2h8.32v4.2h4.15v-13.32z"/>
+    <path id="w" d="M279.18 730.67h-6.93a.7.7 0 0 1-.69-.7c0-.39.31-.7.7-.7h6.92c.38 0 .7.31.7.7a.7.7 0 0 1-.7.7z"/>
+    <path id="x" d="M279.18 733.48h-6.93a.7.7 0 0 1-.69-.7c0-.39.31-.7.7-.7h6.92c.38 0 .7.31.7.7a.7.7 0 0 1-.7.7z"/>
+    <path id="y" d="M279.18 736.28h-6.93a.7.7 0 0 1-.69-.7c0-.39.31-.7.7-.7h6.92c.38 0 .7.31.7.7a.7.7 0 0 1-.7.7z"/>
+    <path id="z" d="M290.95 730.67h-6.93a.7.7 0 0 1-.69-.7c0-.39.31-.7.7-.7h6.92c.38 0 .7.31.7.7a.7.7 0 0 1-.7.7z"/>
+    <path id="A" d="M290.95 733.48h-6.93a.7.7 0 0 1-.69-.7c0-.39.31-.7.7-.7h6.92c.38 0 .7.31.7.7a.7.7 0 0 1-.7.7z"/>
+    <path id="B" d="M290.95 736.28h-6.93a.7.7 0 0 1-.69-.7c0-.39.31-.7.7-.7h6.92c.38 0 .7.31.7.7a.7.7 0 0 1-.7.7z"/>
+    <path id="C" d="M302.73 730.67h-6.93a.7.7 0 0 1-.69-.7c0-.39.31-.7.7-.7h6.92c.38 0 .7.31.7.7a.7.7 0 0 1-.7.7z"/>
+    <path id="D" d="M302.73 733.48h-6.93a.7.7 0 0 1-.69-.7c0-.39.31-.7.7-.7h6.92c.38 0 .7.31.7.7a.7.7 0 0 1-.7.7z"/>
+    <path id="E" d="M302.73 736.28h-6.93a.7.7 0 0 1-.69-.7c0-.39.31-.7.7-.7h6.92c.38 0 .7.31.7.7a.7.7 0 0 1-.7.7z"/>
+    <path id="F" d="M271.56 725.77v-8.42h8.31v8.42z"/>
+    <path id="G" d="M295.11 725.77v-8.42h8.31v8.42z"/>
+    <path id="H" d="M283.33 725.77v-8.42h8.31v8.42z"/>
+    <path id="I" d="M298.44 751.05v-2.8c0-1.54-1.22-2.79-2.74-2.79h-16.4a2.76 2.76 0 0 0-2.74 2.8v2.79z"/>
+    <path id="J" d="M317.6 760.82h-20.53v5.59h23.26v-2.8c0-1.54-1.23-2.79-2.74-2.79z"/>
+    <path id="K" d="M277.92 756.63H257.4a2.76 2.76 0 0 0-2.74 2.8v2.79h23.26z"/>
+    <path id="L" d="M298.44 765.01v-15.36h-21.9v11.17h-21.88v22.35h65.67v-18.16z"/>
+    <path id="M" d="M288.86 763.62h-2.25v-7.23l-2.22.65v-1.72l4.26-1.48h.21z"/>
+    <path id="N"
+          d="M307.54 773.17h1.03c.81 0 1.22-.4 1.22-1.2 0-.32-.1-.58-.29-.77-.2-.2-.47-.3-.82-.3-.29 0-.54.08-.75.25a.78.78 0 0 0-.33.64h-2.18c0-.5.15-.95.42-1.34.28-.4.66-.7 1.15-.92a3.9 3.9 0 0 1 1.61-.33c1.05 0 1.87.24 2.47.73a2.41 2.41 0 0 1 .53 3.15c-.25.36-.6.65-1.08.88a2.23 2.23 0 0 1 1.6 2.21c0 .85-.32 1.54-.97 2.04a4 4 0 0 1-2.55.77c-.61 0-1.18-.12-1.71-.36a2.73 2.73 0 0 1-1.2-.99c-.28-.42-.41-.9-.41-1.43h2.2c0 .3.1.55.34.76.23.21.52.32.86.32.38 0 .69-.1.92-.32.23-.22.34-.5.34-.83 0-.48-.12-.82-.35-1.02a1.5 1.5 0 0 0-.99-.3h-1.05v-1.64z"/>
+    <path id="O"
+          d="M269.71 774.79h-6.64v-1.46l3.05-3.26c.76-.86 1.14-1.56 1.14-2.07 0-.41-.1-.73-.27-.94-.18-.22-.44-.33-.78-.33s-.6.15-.82.44c-.2.28-.3.64-.3 1.08h-2.22a3.18 3.18 0 0 1 1.66-2.82 3.6 3.6 0 0 1 1.73-.42c1.03 0 1.82.24 2.38.72.55.48.84 1.17.84 2.07 0 .38-.07.75-.21 1.12-.15.35-.36.73-.66 1.13-.29.39-.76.92-1.42 1.58l-1.23 1.44h3.75z"/>
+    <linearGradient id="a" x1="353" x2="223.99" y1="740.5" y2="740.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3c285f"/>
+      <stop offset="1" stop-color="#2b1c44"/>
+    </linearGradient>
+    <linearGradient id="c" x1="285.94" x2="285.94" y1="805.21" y2="734.41" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3c285f"/>
+      <stop offset="1" stop-color="#2b1c44"/>
+    </linearGradient>
+    <linearGradient id="e" x1="223.99" x2="321.24" y1="769.21" y2="769.21" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4d3675"/>
+      <stop offset="1" stop-color="#34136a"/>
+    </linearGradient>
+  </defs>
+  <use fill="url(#a)" xlink:href="#b" transform="translate(-218 -674)"/>
+  <use fill="url(#c)" xlink:href="#d" transform="translate(-218 -674)"/>
+  <use fill="url(#e)" xlink:href="#f" transform="translate(-218 -674)"/>
+  <g transform="translate(-218 -674)">
+    <use fill="#59447f" xlink:href="#g"/>
+    <use fill="#fff" fill-opacity="0" stroke="#342252" stroke-linecap="square" stroke-miterlimit="50" stroke-width=".3"
+         xlink:href="#h"/>
+    <use fill="#fff" xlink:href="#i"/>
+    <use fill="#fff" xlink:href="#j"/>
+    <use fill="#fff" xlink:href="#k"/>
+    <use fill="#59447f" xlink:href="#l"/>
+    <use fill="#fff" fill-opacity="0" stroke="#342252" stroke-linecap="square" stroke-miterlimit="50" stroke-width=".3"
+         xlink:href="#m"/>
+    <use fill="#fff" xlink:href="#n"/>
+    <use fill="#fff" xlink:href="#o"/>
+    <use fill="#fff" xlink:href="#p"/>
+    <use fill="#ecf0f1" xlink:href="#q"/>
+    <use fill="#9c6ce9" xlink:href="#r"/>
+    <use fill="#ed7161" xlink:href="#s"/>
+    <use fill="#f0c419" xlink:href="#t"/>
+    <use fill="#4fba6f" xlink:href="#u"/>
+    <use fill="#bf98ff" xlink:href="#v"/>
+    <use fill="#5c6bc0" xlink:href="#w"/>
+    <use fill="#5c6bc0" xlink:href="#x"/>
+    <use fill="#5c6bc0" xlink:href="#y"/>
+    <use fill="#5c6bc0" xlink:href="#z"/>
+    <use fill="#5c6bc0" xlink:href="#A"/>
+    <use fill="#5c6bc0" xlink:href="#B"/>
+    <use fill="#5c6bc0" xlink:href="#C"/>
+    <use fill="#5c6bc0" xlink:href="#D"/>
+    <use fill="#5c6bc0" xlink:href="#E"/>
+    <use fill="#fbc02d" xlink:href="#F"/>
+    <use fill="#fbc02d" xlink:href="#G"/>
+    <use fill="#fbc02d" xlink:href="#H"/>
+    <use fill="#bf98ff" xlink:href="#I"/>
+    <use fill="#bf98ff" xlink:href="#J"/>
+    <use fill="#bf98ff" xlink:href="#K"/>
+    <use fill="#5c6bc0" xlink:href="#L"/>
+    <use fill="#fff" xlink:href="#M"/>
+    <use fill="#fff" xlink:href="#N"/>
+    <use fill="#fff" xlink:href="#O"/>
+  </g>
+</svg>
