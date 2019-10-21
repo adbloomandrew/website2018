@@ -74,6 +74,14 @@
   }
 }
 
+.u-header__sub-menu {
+  .dropdown-item {
+    &:active {
+      background-color: #5a5f69;
+    }
+  }
+}
+
 .u-go-to{
   background-color: transparentize($white, 0.8);
   color: $white;
