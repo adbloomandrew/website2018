@@ -5,24 +5,47 @@ $transition-time: 0.3s;
   @include size(100%);
   background: $white;
   box-shadow: 0 3px 15px transparentize($black, 0.94);
-  padding: 30px 20px;
+  padding: 35px 20px 10px 15px;
   transition: all $transition-time ease;
   border-radius: 6px;
-  max-width: 385px;
+  max-width: 300px;
   margin: 0 auto;
   z-index: 0;
 
-  .icon-wrap {
-    margin-bottom: 25px;
-    svg {
-      @include svg-icon($width: 150px, $height: 130px);
+  &:before {
+    @include pseudo;
+    @include absolute(top 0 left 0);
+    @include size(100%);
+    transition: opacity $transition-time ease;
+    background: linear-gradient(270deg, #3c285f 0%, #2b1c44 100%);
+    z-index: -1;
+    border-radius: 8px;
+    opacity: 0;
+  }
+
+  @include hover {
+    box-shadow: 0 20px 20px -15px rgba(43,28,68,1);
+    &:before {
+      opacity: 1;
+    }
+
+    .card-title,
+    .card-description {
+      color: $white;
     }
   }
 
-  .card-title {
-    user-select: none;
-    @include media-breakpoint-down(sm) {
-      font-size: 16px;
+  .icon-wrap {
+    margin-bottom: 15px;
+    svg {
+      @include svg-icon($width: 75px, $height: 65px);
     }
+  }
+
+  .card-title,
+  .card-description {
+    transition: color $transition-time ease;
+    padding-left: 15px;
+    user-select: none;
   }
 }
