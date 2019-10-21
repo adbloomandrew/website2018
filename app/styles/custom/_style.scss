@@ -238,3 +238,41 @@
 .u-content-position-top {
   @include absolute(top 0);
 }
+
+// custom step's icons colors
+.u-icon-custom {
+   &__orange {
+     background-color: #fbbd34;
+   }
+
+   &__blue {
+     background-color: #34b1d5;
+   }
+
+   &__green {
+     background-color: #8bc74a;
+   }
+ }
+
+.u-custom-indicator-color {
+  &__orange {
+    &:after {
+      border-color: #fbbd34;
+      z-index: -1;
+    }
+  }
+
+  &__blue {
+    &:after {
+      border-color: #34b1d5;
+      z-index: -1;
+    }
+  }
+
+  &__green {
+    &:after {
+      border-color: #8bc74a;
+      z-index: -1;
+    }
+  }
+}
