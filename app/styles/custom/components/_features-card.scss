@@ -17,7 +17,7 @@ $transition-time: 0.3s;
     @include absolute(top 0 left 0);
     @include size(100%);
     transition: opacity $transition-time ease;
-    background: linear-gradient(270deg, #3c285f 0%, #113262 100%);
+    background: $blue-darker;
     z-index: -1;
     border-radius: 8px;
     opacity: 0;
