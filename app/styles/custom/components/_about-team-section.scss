@@ -18,6 +18,12 @@
   }
 
   .team-member {
+    &-image {
+      @include img-fluid;
+      @include center;
+      @include mb(3);
+      display: block;
+    }
     &-content {
       padding: 15px 10px 20px;
       background-color: $white;
