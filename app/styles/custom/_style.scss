@@ -276,3 +276,17 @@
     }
   }
 }
+
+.u-fill {
+  &__orange {
+    fill: #fbbd34;
+  }
+
+  &__blue {
+    fill: #34b1d5;
+  }
+
+  &__green {
+    fill: #8bc74a;
+  }
+}
