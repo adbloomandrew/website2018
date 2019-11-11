@@ -167,48 +167,11 @@
         </div>
         <!-- End Title -->
 
-        <!-- Google Map -->
-        <div id="gMapMultipleMarkers" class="embed-responsive embed-responsive-21by9 u-gmap-v1 min-height-300 mb-4"
-             data-type="custom"
-             data-lat="43.6692249"
-             data-lng="-79.3897079"
-             data-zoom="17"
-             data-pin="true"
-             data-multiple-markers="false"
-             data-styles='[[
-                "", "", [
-                  {"saturation": -100},
-                  {"lightness": 50},
-                  {"visibility": "simplified"}
-                ]],[
-                  "",
-                  "geometry", [
-                    {"color": "#f3f3f3"}
-                ]],[
-                  "road", "", [
-                    {"color": "#ffffff"},
-                    {"lightness": 100}
-                ]],[
-                  "road",
-                  "labels.text.fill", [
-                    {"color": "#ffffff"},
-                    {"lightness": -50}]
-                ],[
-                  "water", "", [
-                    {"color": "#377dff"}
-                ]]
-               ]'
-             data-markers-locations='[[
-                  "/images/pointer.png",
-                  "Adbloom",
-                  43.6692249, -79.3918966,
-                  "/images/favicon/135x135.jpg",
-                  "Image description",
-                  "",
-                  "Canada",
-                  "Adbloom"
-                ]]'></div>
-        <!-- End Google Map -->
+        <!-- link to google map -->
+        <a href="https://www.google.com/maps/search/?api=1&query=43.6692863,-79.3898448&zoom=17"
+           rel="noopener noreferrer" target="_blank" class="d-block mb-4">
+          <img src="/images/map.png" alt="map" class="img-fluid">
+        </a>
 
         <!-- Office Hours -->
         <div class="media">
@@ -495,24 +458,6 @@
       }
     });
   });
-
-  // initialization of google map
-  function initMap() {
-    $.HSCore.components.HSGMap.init('.js-g-map');
-    $.HSCore.components.HSGMap.init('#gMapMultipleMarkers', {
-      infoWindowTemplate: function (imgsrc, imgalt, date, locationname, title) {
-        return '<div class="u-gmap-v1__info">' +
-          '<img class="img-fluid mb-2" src="' + imgsrc + '" alt="' + imgalt + '">' +
-          '<small class="d-block text-muted mb-2">' + date + '</small>' +
-          '<h4 class="h6 mb-0">' + title + '</h4>' +
-          '<p class="mb-0">' + locationname + '</p>' +
-          '</div>';
-      }
-    });
-  }
 </script>
-<script src="//maps.googleapis.com/maps/api/js?key=AIzaSyDv03NC9-CSUTUWSGZJbu-tGJb2eSHsvDc&callback=initMap" async
-        defer></script>
-
 </body>
 </html>
